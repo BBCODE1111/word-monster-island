@@ -93,7 +93,7 @@ export function answerQuestion(profile,mission,input,data,catalog,{random=Math.r
    if(mission.enemy.hp===0){result.finishedEncounter=true;mission.defeated++;grantXP(profile,mission,catalog,25);result.message+=` ${wild.name} retreated. Use Catch below 35% HP next time.`;}
   }
  }else{
-  result.counterDamage=damageAmount(wildStats,stats,{attackerType:wild.type,defenderType:species.type,random});vitals.hp=Math.max(0,vitals.hp-result.counterDamage);result.message=`${wild.name} attacked! −${result.counterDamage} HP. Listen and try the next word.`;
+  result.enemySpecial=mission.enemy.mp>=specialCost(wild)&&random()<.28;if(result.enemySpecial)mission.enemy.mp-=specialCost(wild);result.counterDamage=damageAmount(wildStats,stats,{special:result.enemySpecial,attackerType:wild.type,defenderType:species.type,random});vitals.hp=Math.max(0,vitals.hp-result.counterDamage);result.message=`${wild.name} attacked! −${result.counterDamage} HP. Listen and try the next word.`;
   if(!vitals.hp){const ready=profile.team.find(id=>mission.vitals[id].hp>0);if(ready){mission.active=ready;result.message+=' Your next teammate steps in!';}else{result.rescued=true;result.finishedEncounter=true;result.message='Your team needs a rest. The rescue crew brought everyone home safely.';}}
  }
  mission.result=result;return result;
