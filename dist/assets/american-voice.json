@@ -1,0 +1,934 @@
+{
+  "voice": "en-US-JennyNeural",
+  "display_name": "Jenny",
+  "locale": "en-US",
+  "rate": "-7%",
+  "word_count": 231,
+  "audio": "american-voice.mp3",
+  "words": {
+    "again": {
+      "start": 0.04875,
+      "duration": 0.76642
+    },
+    "air": {
+      "start": 1.57133,
+      "duration": 0.64542
+    },
+    "all": {
+      "start": 2.96921,
+      "duration": 0.632
+    },
+    "angry": {
+      "start": 4.35358,
+      "duration": 0.80671
+    },
+    "ant": {
+      "start": 5.91275,
+      "duration": 0.67229
+    },
+    "around": {
+      "start": 7.33746,
+      "duration": 0.76642
+    },
+    "baby": {
+      "start": 8.85629,
+      "duration": 0.7395
+    },
+    "back": {
+      "start": 10.34821,
+      "duration": 0.72608
+    },
+    "ball": {
+      "start": 11.82671,
+      "duration": 0.68575
+    },
+    "battery": {
+      "start": 13.26487,
+      "duration": 0.87392
+    },
+    "bed": {
+      "start": 14.89125,
+      "duration": 0.64542
+    },
+    "bedroom": {
+      "start": 16.28908,
+      "duration": 0.82017
+    },
+    "big": {
+      "start": 17.86167,
+      "duration": 0.632
+    },
+    "bigger": {
+      "start": 19.24608,
+      "duration": 0.7395
+    },
+    "bike": {
+      "start": 20.738,
+      "duration": 0.72608
+    },
+    "bird": {
+      "start": 22.2165,
+      "duration": 0.632
+    },
+    "blend": {
+      "start": 23.60092,
+      "duration": 0.72608
+    },
+    "block": {
+      "start": 25.07942,
+      "duration": 0.77983
+    },
+    "blow": {
+      "start": 26.61167,
+      "duration": 0.7395
+    },
+    "board": {
+      "start": 28.10358,
+      "duration": 0.65888
+    },
+    "body": {
+      "start": 29.51487,
+      "duration": 0.72608
+    },
+    "born": {
+      "start": 30.99338,
+      "duration": 0.68575
+    },
+    "both": {
+      "start": 32.43154,
+      "duration": 0.67229
+    },
+    "boy": {
+      "start": 33.85629,
+      "duration": 0.67229
+    },
+    "breathe": {
+      "start": 35.28104,
+      "duration": 0.67229
+    },
+    "brother": {
+      "start": 36.70575,
+      "duration": 0.75296
+    },
+    "brown": {
+      "start": 38.21113,
+      "duration": 0.72608
+    },
+    "brush": {
+      "start": 39.68962,
+      "duration": 0.7395
+    },
+    "burrow": {
+      "start": 41.18154,
+      "duration": 0.76642
+    },
+    "calf": {
+      "start": 42.70038,
+      "duration": 0.7395
+    },
+    "catch": {
+      "start": 44.19229,
+      "duration": 0.82017
+    },
+    "change": {
+      "start": 45.76488,
+      "duration": 0.82017
+    },
+    "chase": {
+      "start": 47.33746,
+      "duration": 0.72608
+    },
+    "check": {
+      "start": 48.81596,
+      "duration": 0.71262
+    },
+    "child": {
+      "start": 50.28104,
+      "duration": 0.7395
+    },
+    "clap": {
+      "start": 51.77296,
+      "duration": 0.71262
+    },
+    "coat": {
+      "start": 53.238,
+      "duration": 0.67229
+    },
+    "come": {
+      "start": 54.66275,
+      "duration": 0.64542
+    },
+    "corner": {
+      "start": 56.06058,
+      "duration": 0.76642
+    },
+    "crawl": {
+      "start": 57.57942,
+      "duration": 0.7395
+    },
+    "cross": {
+      "start": 59.07133,
+      "duration": 0.82017
+    },
+    "crosswalk": {
+      "start": 60.64392,
+      "duration": 1.00833
+    },
+    "cute": {
+      "start": 62.40467,
+      "duration": 0.7395
+    },
+    "dark": {
+      "start": 63.89663,
+      "duration": 0.72608
+    },
+    "deep": {
+      "start": 65.37512,
+      "duration": 0.65888
+    },
+    "den": {
+      "start": 66.78642,
+      "duration": 0.34613
+    },
+    "desk": {
+      "start": 67.09554,
+      "duration": 0.7395
+    },
+    "dig": {
+      "start": 68.58746,
+      "duration": 0.60513
+    },
+    "dirt": {
+      "start": 69.945,
+      "duration": 0.68575
+    },
+    "dolphin": {
+      "start": 71.38317,
+      "duration": 0.8605
+    },
+    "down": {
+      "start": 72.99608,
+      "duration": 0.72608
+    },
+    "dream": {
+      "start": 74.47458,
+      "duration": 0.71263
+    },
+    "drum": {
+      "start": 75.93962,
+      "duration": 0.71263
+    },
+    "eagle": {
+      "start": 77.40467,
+      "duration": 0.72608
+    },
+    "egg": {
+      "start": 78.88317,
+      "duration": 0.632
+    },
+    "elephant": {
+      "start": 80.26758,
+      "duration": 0.94113
+    },
+    "enjoy": {
+      "start": 81.96112,
+      "duration": 0.87392
+    },
+    "enter": {
+      "start": 83.58746,
+      "duration": 0.75296
+    },
+    "eraser": {
+      "start": 85.09283,
+      "duration": 0.92771
+    },
+    "eye": {
+      "start": 86.77296,
+      "duration": 0.71263
+    },
+    "fall": {
+      "start": 88.238,
+      "duration": 0.76642
+    },
+    "family": {
+      "start": 89.75683,
+      "duration": 0.88738
+    },
+    "fan": {
+      "start": 91.39663,
+      "duration": 0.75296
+    },
+    "far": {
+      "start": 92.902,
+      "duration": 0.75296
+    },
+    "fat": {
+      "start": 94.40737,
+      "duration": 0.79329
+    },
+    "father": {
+      "start": 95.95308,
+      "duration": 0.82017
+    },
+    "feed": {
+      "start": 97.52562,
+      "duration": 0.71263
+    },
+    "feel": {
+      "start": 98.99071,
+      "duration": 0.76642
+    },
+    "fireworks": {
+      "start": 100.5095,
+      "duration": 1.10242
+    },
+    "first": {
+      "start": 102.36433,
+      "duration": 0.77983
+    },
+    "flower": {
+      "start": 103.89663,
+      "duration": 0.8605
+    },
+    "four": {
+      "start": 105.5095,
+      "duration": 0.79329
+    },
+    "frog": {
+      "start": 107.05521,
+      "duration": 0.80671
+    },
+    "front": {
+      "start": 108.61433,
+      "duration": 0.79329
+    },
+    "full": {
+      "start": 110.16004,
+      "duration": 0.76642
+    },
+    "game": {
+      "start": 111.67887,
+      "duration": 0.67229
+    },
+    "gather": {
+      "start": 113.10358,
+      "duration": 0.76642
+    },
+    "gills": {
+      "start": 114.62242,
+      "duration": 0.75296
+    },
+    "give": {
+      "start": 116.12779,
+      "duration": 0.632
+    },
+    "glossary": {
+      "start": 117.51221,
+      "duration": 0.99488
+    },
+    "go": {
+      "start": 119.2595,
+      "duration": 0.65888
+    },
+    "gone": {
+      "start": 120.67079,
+      "duration": 0.69921
+    },
+    "grass": {
+      "start": 122.12242,
+      "duration": 0.80671
+    },
+    "green": {
+      "start": 123.68154,
+      "duration": 0.72608
+    },
+    "grow": {
+      "start": 125.16004,
+      "duration": 0.68575
+    },
+    "grown-up": {
+      "start": 126.59821,
+      "duration": 0.77983
+    },
+    "guard": {
+      "start": 128.1305,
+      "duration": 0.67229
+    },
+    "hair": {
+      "start": 129.55521,
+      "duration": 0.69921
+    },
+    "hall": {
+      "start": 131.00683,
+      "duration": 0.67229
+    },
+    "hand": {
+      "start": 132.43154,
+      "duration": 0.67229
+    },
+    "happy": {
+      "start": 133.85629,
+      "duration": 0.76642
+    },
+    "hatch": {
+      "start": 135.37512,
+      "duration": 0.76642
+    },
+    "have": {
+      "start": 136.89392,
+      "duration": 0.64542
+    },
+    "hear": {
+      "start": 138.29179,
+      "duration": 0.65888
+    },
+    "herd": {
+      "start": 139.70308,
+      "duration": 0.632
+    },
+    "here": {
+      "start": 141.08746,
+      "duration": 0.65887
+    },
+    "hill": {
+      "start": 142.49875,
+      "duration": 0.69921
+    },
+    "hit": {
+      "start": 143.95037,
+      "duration": 0.65888
+    },
+    "hold": {
+      "start": 145.36167,
+      "duration": 0.71263
+    },
+    "holiday": {
+      "start": 146.82671,
+      "duration": 0.88738
+    },
+    "home": {
+      "start": 148.4665,
+      "duration": 0.68575
+    },
+    "huge": {
+      "start": 149.90467,
+      "duration": 0.80671
+    },
+    "hungry": {
+      "start": 151.46383,
+      "duration": 0.8605
+    },
+    "jaw": {
+      "start": 153.07671,
+      "duration": 0.64542
+    },
+    "job": {
+      "start": 154.47458,
+      "duration": 0.61854
+    },
+    "jump": {
+      "start": 155.84554,
+      "duration": 0.632
+    },
+    "keep": {
+      "start": 157.22996,
+      "duration": 0.64542
+    },
+    "kick": {
+      "start": 158.61433,
+      "duration": 0.72608
+    },
+    "lamp": {
+      "start": 160.09283,
+      "duration": 0.68575
+    },
+    "lay": {
+      "start": 161.531,
+      "duration": 0.69921
+    },
+    "leaf": {
+      "start": 162.98262,
+      "duration": 0.72608
+    },
+    "leaves": {
+      "start": 164.46112,
+      "duration": 0.75296
+    },
+    "left": {
+      "start": 165.9665,
+      "duration": 0.72608
+    },
+    "lights": {
+      "start": 167.445,
+      "duration": 0.84704
+    },
+    "line": {
+      "start": 169.04446,
+      "duration": 0.7395
+    },
+    "listen": {
+      "start": 170.53642,
+      "duration": 0.84704
+    },
+    "little": {
+      "start": 172.13587,
+      "duration": 0.7395
+    },
+    "long": {
+      "start": 173.62779,
+      "duration": 0.39992
+    },
+    "look": {
+      "start": 173.99071,
+      "duration": 0.60513
+    },
+    "lose": {
+      "start": 175.34821,
+      "duration": 0.79329
+    },
+    "loud": {
+      "start": 176.89392,
+      "duration": 0.7395
+    },
+    "lucky": {
+      "start": 178.38587,
+      "duration": 0.80671
+    },
+    "lungs": {
+      "start": 179.945,
+      "duration": 0.84704
+    },
+    "make": {
+      "start": 181.54446,
+      "duration": 0.71263
+    },
+    "many": {
+      "start": 183.0095,
+      "duration": 0.7395
+    },
+    "map": {
+      "start": 184.50146,
+      "duration": 0.67229
+    },
+    "meal": {
+      "start": 185.92617,
+      "duration": 0.69921
+    },
+    "mice": {
+      "start": 187.37779,
+      "duration": 0.79329
+    },
+    "monkey": {
+      "start": 188.9235,
+      "duration": 0.8605
+    },
+    "mother": {
+      "start": 190.53642,
+      "duration": 0.76642
+    },
+    "mutter": {
+      "start": 192.05521,
+      "duration": 0.7395
+    },
+    "nap": {
+      "start": 193.54717,
+      "duration": 0.68575
+    },
+    "need": {
+      "start": 194.98533,
+      "duration": 0.67229
+    },
+    "nest": {
+      "start": 196.41004,
+      "duration": 0.77983
+    },
+    "new": {
+      "start": 197.94229,
+      "duration": 0.71263
+    },
+    "nice": {
+      "start": 199.40738,
+      "duration": 0.84704
+    },
+    "night": {
+      "start": 201.00683,
+      "duration": 0.75296
+    },
+    "old": {
+      "start": 202.51221,
+      "duration": 0.64542
+    },
+    "one": {
+      "start": 203.91004,
+      "duration": 0.67229
+    },
+    "outside": {
+      "start": 205.33479,
+      "duration": 0.88738
+    },
+    "page": {
+      "start": 206.97458,
+      "duration": 0.82017
+    },
+    "party": {
+      "start": 208.54717,
+      "duration": 0.75296
+    },
+    "pencil": {
+      "start": 210.05254,
+      "duration": 0.8605
+    },
+    "people": {
+      "start": 211.66542,
+      "duration": 0.79329
+    },
+    "person": {
+      "start": 213.21112,
+      "duration": 0.82017
+    },
+    "picture": {
+      "start": 214.78371,
+      "duration": 0.84704
+    },
+    "place": {
+      "start": 216.38317,
+      "duration": 0.76642
+    },
+    "plant": {
+      "start": 217.902,
+      "duration": 0.7395
+    },
+    "play": {
+      "start": 219.39392,
+      "duration": 0.7395
+    },
+    "playground": {
+      "start": 220.88587,
+      "duration": 0.90079
+    },
+    "point": {
+      "start": 222.53908,
+      "duration": 0.7395
+    },
+    "pond": {
+      "start": 224.031,
+      "duration": 0.71263
+    },
+    "pour": {
+      "start": 225.49608,
+      "duration": 0.72608
+    },
+    "pretty": {
+      "start": 226.97458,
+      "duration": 0.71263
+    },
+    "puddle": {
+      "start": 228.43963,
+      "duration": 0.72608
+    },
+    "queen": {
+      "start": 229.91813,
+      "duration": 0.68575
+    },
+    "quiet": {
+      "start": 231.35629,
+      "duration": 0.83358
+    },
+    "race": {
+      "start": 232.94229,
+      "duration": 0.71263
+    },
+    "radio": {
+      "start": 234.40738,
+      "duration": 0.91425
+    },
+    "rainy": {
+      "start": 236.07404,
+      "duration": 0.72608
+    },
+    "read": {
+      "start": 237.55254,
+      "duration": 0.30579
+    },
+    "ready": {
+      "start": 239.31329,
+      "duration": 0.71263
+    },
+    "ride": {
+      "start": 240.77833,
+      "duration": 0.75296
+    },
+    "right": {
+      "start": 242.28371,
+      "duration": 0.76642
+    },
+    "roll": {
+      "start": 243.80254,
+      "duration": 0.72608
+    },
+    "round": {
+      "start": 245.281,
+      "duration": 0.68575
+    },
+    "run": {
+      "start": 246.71921,
+      "duration": 0.68575
+    },
+    "safe": {
+      "start": 248.15738,
+      "duration": 0.79329
+    },
+    "sand": {
+      "start": 249.70308,
+      "duration": 0.77983
+    },
+    "scared": {
+      "start": 251.23533,
+      "duration": 0.79329
+    },
+    "see": {
+      "start": 252.781,
+      "duration": 0.69921
+    },
+    "shoe": {
+      "start": 254.23262,
+      "duration": 0.76642
+    },
+    "show": {
+      "start": 255.75146,
+      "duration": 0.75296
+    },
+    "sister": {
+      "start": 257.25683,
+      "duration": 0.91425
+    },
+    "sit": {
+      "start": 258.9235,
+      "duration": 0.77983
+    },
+    "sleep": {
+      "start": 260.45575,
+      "duration": 0.75296
+    },
+    "small": {
+      "start": 261.96112,
+      "duration": 0.82017
+    },
+    "smell": {
+      "start": 263.53371,
+      "duration": 0.76642
+    },
+    "smile": {
+      "start": 265.05254,
+      "duration": 0.82017
+    },
+    "smooth": {
+      "start": 266.62512,
+      "duration": 0.77983
+    },
+    "soft": {
+      "start": 268.15738,
+      "duration": 0.79329
+    },
+    "some": {
+      "start": 269.70304,
+      "duration": 0.72608
+    },
+    "soon": {
+      "start": 271.18154,
+      "duration": 0.7395
+    },
+    "spider": {
+      "start": 272.6735,
+      "duration": 0.8605
+    },
+    "spring": {
+      "start": 274.28638,
+      "duration": 0.82017
+    },
+    "square": {
+      "start": 275.85896,
+      "duration": 0.84704
+    },
+    "stand": {
+      "start": 277.45846,
+      "duration": 0.84704
+    },
+    "start": {
+      "start": 279.05792,
+      "duration": 0.84704
+    },
+    "stop": {
+      "start": 280.65738,
+      "duration": 0.77983
+    },
+    "storm": {
+      "start": 282.18962,
+      "duration": 0.83358
+    },
+    "street": {
+      "start": 283.77562,
+      "duration": 0.83358
+    },
+    "strong": {
+      "start": 285.36167,
+      "duration": 0.87392
+    },
+    "summer": {
+      "start": 286.988,
+      "duration": 0.80671
+    },
+    "sunny": {
+      "start": 288.54717,
+      "duration": 0.80671
+    },
+    "sweep": {
+      "start": 290.10629,
+      "duration": 0.7395
+    },
+    "sweet": {
+      "start": 291.59821,
+      "duration": 0.77983
+    },
+    "swim": {
+      "start": 293.1305,
+      "duration": 0.77983
+    },
+    "swing": {
+      "start": 294.66275,
+      "duration": 0.76642
+    },
+    "tadpole": {
+      "start": 296.18154,
+      "duration": 0.91425
+    },
+    "talk": {
+      "start": 297.84821,
+      "duration": 0.75296
+    },
+    "tall": {
+      "start": 299.35358,
+      "duration": 0.71263
+    },
+    "taste": {
+      "start": 300.81867,
+      "duration": 0.75296
+    },
+    "teeth": {
+      "start": 302.32404,
+      "duration": 0.68575
+    },
+    "tell": {
+      "start": 303.74875,
+      "duration": 0.69921
+    },
+    "there": {
+      "start": 305.20038,
+      "duration": 0.68575
+    },
+    "three": {
+      "start": 306.63854,
+      "duration": 0.632
+    },
+    "through": {
+      "start": 308.02296,
+      "duration": 0.69921
+    },
+    "thunder": {
+      "start": 309.47458,
+      "duration": 0.79329
+    },
+    "tiger": {
+      "start": 311.02025,
+      "duration": 0.80671
+    },
+    "time": {
+      "start": 312.57942,
+      "duration": 0.71263
+    },
+    "tongue": {
+      "start": 314.04446,
+      "duration": 0.68575
+    },
+    "touch": {
+      "start": 315.48262,
+      "duration": 0.79329
+    },
+    "traffic": {
+      "start": 317.02833,
+      "duration": 0.87392
+    },
+    "truck": {
+      "start": 318.65467,
+      "duration": 0.75296
+    },
+    "turn": {
+      "start": 320.16004,
+      "duration": 0.632
+    },
+    "two": {
+      "start": 321.54446,
+      "duration": 0.67229
+    },
+    "upstairs": {
+      "start": 322.96921,
+      "duration": 1.03521
+    },
+    "vet": {
+      "start": 324.75683,
+      "duration": 0.72608
+    },
+    "wait": {
+      "start": 326.23533,
+      "duration": 0.7395
+    },
+    "walk": {
+      "start": 327.72725,
+      "duration": 0.76642
+    },
+    "warm": {
+      "start": 329.24608,
+      "duration": 0.69921
+    },
+    "watch": {
+      "start": 330.69767,
+      "duration": 0.77983
+    },
+    "water": {
+      "start": 332.22996,
+      "duration": 0.75296
+    },
+    "wave": {
+      "start": 333.73533,
+      "duration": 0.69921
+    },
+    "way": {
+      "start": 335.18692,
+      "duration": 0.65888
+    },
+    "white": {
+      "start": 336.59821,
+      "duration": 0.75296
+    },
+    "windy": {
+      "start": 338.10358,
+      "duration": 0.77983
+    },
+    "winter": {
+      "start": 339.63587,
+      "duration": 0.79329
+    },
+    "wish": {
+      "start": 341.18154,
+      "duration": 0.69921
+    },
+    "yellow": {
+      "start": 342.63317,
+      "duration": 0.82017
+    },
+    "zoo": {
+      "start": 344.20575,
+      "duration": 0.75296
+    }
+  }
+}

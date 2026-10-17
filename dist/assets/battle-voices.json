@@ -1,0 +1,42 @@
+{
+  "voice": "en-US-JennyNeural",
+  "locale": "en-US",
+  "audio": "battle-voices.mp3",
+  "words": {
+    "@attack": {
+      "start": 0.05654,
+      "duration": 1.19304,
+      "text": "Link, go!"
+    },
+    "@capture": {
+      "start": 1.96529,
+      "duration": 1.63117,
+      "text": "Got you, new friend!"
+    },
+    "@hurt": {
+      "start": 4.31067,
+      "duration": 1.78579,
+      "text": "Whoa, let's try again!"
+    },
+    "@boss": {
+      "start": 6.81067,
+      "duration": 2.00492,
+      "text": "A guardian, let's do this!"
+    },
+    "@hit": {
+      "start": 9.52975,
+      "duration": 0.92242,
+      "text": "Great hit!"
+    },
+    "@victory": {
+      "start": 11.16633,
+      "duration": 1.78583,
+      "text": "We did it, welcome friend!"
+    },
+    "@pet": {
+      "start": 13.66633,
+      "duration": 1.66988,
+      "text": "Hello, little friend!"
+    }
+  }
+}
