@@ -1,70 +1,32 @@
-# 單字獸島 · Wordling Island
+# Wordling Island
 
-原創日系動漫對戰英語遊戲。遊戲指令以簡單英文為主，中文僅作單字意思輔助。帶著 Wordlink 筆電掃描器，聽單字、選答案、排字母，招募六隻戰鬥夥伴。
+Original English vocabulary monster battle game for Grade 1 CET/FET, hosted on native GitHub Pages.
 
-遊戲網站：https://word-monster-island.dreamuzik.chatgpt.site
+Game: https://bbcode1111.github.io/word-monster-island/
 
-## 玩法
+## Play
 
-- 聽音選字：聽英文，從四個答案送出正確的捕捉訊號。
-- 字母拼拼：依序排列打亂字母，重複字母和連字號都要正確排入。
-- 混合冒險：輪流練習兩種題型。
-- 每趟五隻小怪加魔王。Stormcrest 魔王三格血量，答對三題才能捕捉。
-- 不限時或每題 15／25／40 秒。首次發音完成後倒數，可暫停，切分頁自動暫停。
-- 可選 CET／FET 全部、合併字庫，或複選 Week／Lesson。
-- 內建 Jenny 自然美語錄音，231 個拼字都有獨立片段；按喇叭可重聽。錄音不可用時改用裝置的美語語音。首次點擊畫面才啟用聲音。
-- 無提示首次答對 100 分，重試答對 70 分，使用提示答對 50 分。
-- 答對時研究員施放捕捉光束，答錯時怪物反擊、主角後退並展開護盾；附動作配音與各怪物叫聲，動畫中暫停倒數。
-- 原創日系冒險旋律，園區與魔王有不同配樂。配樂、音效、美語音量可分別調整，發音時配樂自動降低音量。
-- 已捕捉夥伴會在園區自由散步，可集合、餵點心、點擊互動，返回時保留關卡。
-- 圖鑑、學習足跡和選單設定存在目前瀏覽器，不跨裝置同步。
+Create a player code and password for cloud saves and the shared leaderboard, or choose a local guest. Pick CET Weeks, FET Lessons, a whole course, or both. Listen to natural American English and choose one of four words or arrange letter tiles. Unlimited and 15/25/40-second modes are available.
 
-## 本機啟動
+Choose Attack, Special, or Catch before answering. Correct words power the move; wrong words trigger a counterattack. Weaken the enemy to 35% HP to try a catch. Each mission has five ordinary encounters and a guardian. Caught monsters can immediately join battle. Build a team of up to three; the warehouse shows individual values, quality, level, XP, HP, MP, Attack, Defense, Special, and abilities. Owned species roam in the Team Park.
 
-不需要安裝前端依賴，用 Python 3 提供靜態網站：
+## 100 original species
 
-```sh
-python3 -m http.server 4187 --directory dist
-```
+32 Common, 30 Uncommon, 22 Rare, 12 Epic, and 4 Legendary. Uncommon unlocks after 2 cleared missions; Rare 8; Epic 30; Legendary 80. Base rarity weights are 75.85 / 18 / 5 / 1 / 0.15, normalized over unlocked tiers. Spell It increases Rare+ weights by 15%; Mixed by 7.5%. Unlocks never guarantee an encounter. Catch rates per correct weakened-target attempt are 100% / 90% / 60% / 35% / 15%. A monster can escape after three failed catches.
 
-開啟 http://localhost:4187 。請使用 HTTP，直接開 HTML 檔案無法載入字庫。
+## Course data
 
-## 修改網站
+231 distinct spellings, 235 word/POS cards, 320 course occurrences, 33 original course groups: 15 CET Week groups and 18 FET Lessons. `dist/data/vocabulary.json` is the website data; `data/vocabulary.sqlite3` and JSON preserve structured backups. Source URLs remain in the data. Supplemental Chinese meanings are learning aids.
 
-| 檔案 | 用途 |
-| --- | --- |
-| `dist/app.js` | 選單、發音、出題、時間、捕捉動畫與圖鑑 |
-| `dist/audio.mjs` | 原創配樂、音效、怪物叫聲、美語錄音播放器與備援語音 |
-| `dist/battle.mjs` | 攻擊、反擊、捕捉動作及可取消的配音流程 |
-| `dist/park.mjs` | 園區散步、集合和互動 |
-| `dist/engine.mjs` | 怪物名稱與描述、題庫篩選、洗牌和魔王規則 |
-| `dist/style.css` | 桌機／手機版面、色彩與動畫 |
-| `dist/index.html` | 網站標題、圖示與入口 |
-| `dist/assets/` | 原創怪物圖集、機能裝備主角、動作姿勢與 Frontier Ridge 場景 |
-| `dist/data/vocabulary.json` | 遊戲實際讀取的單字資料 |
-| `data/` | 單字資料庫、JSON 與中文翻譯對照備份 |
-| `tests/` | 遊戲規則、語音覆蓋、園區移動與動作取消檢查 |
+## Maintain
 
-要調整遊戲文字或單字意思，請修改 `dist/data/vocabulary.json` 中的資料；`cards` 保存詞性與中文，`groups` 保存週次／Lesson。`data/` 的檔案供資料庫查詢與維護參考，不會被遊戲自動載入。
+- Run `npm start` and open http://localhost:4187.
+- Run `npm test` for course, audio, capture, rarity, stats, battle, and migration checks.
+- Website: `dist/`. Course selection and screens: `dist/app.js`; shared rules: `dist/rpg.mjs`; sound: `dist/audio.mjs`; animations: `dist/battle.mjs`; park: `dist/park.mjs`.
+- Artwork: `dist/assets/monsters-v3.png` plus six `dex-atlas-*.png` sheets, mapped by `dist/data/monsters.json`.
+- Backend setup and updates: [backend/README.md](backend/README.md).
+- Push to `main` to publish via `.github/workflows/pages.yml`. Enable GitHub Actions as the Pages source in repository settings.
 
-怪物圖集 `monsters-v3.png` 為 3 欄 × 2 列透明 PNG，`.monster-0` 至 `.monster-5` 對應六個位置，換圖時請維持此排版。原創主角使用 `ranger-v3.png`，動作圖集為 `ranger-actions-v3.png`，由 CSS 選取施放、受擊與慶祝三個姿勢。
+The default music volume is 12%; music is silent during speech and returns softly. All 231 words have US voice recordings. Game instructions use English, with Chinese vocabulary meanings as support.
 
-`american-voice.mp3` 與同名 JSON 保存美語單字錄音及秒數索引；`battle-voices-v3.mp3` 與 JSON 保存動作台詞。修改或新增拼字時，需要一併補上錄音索引，未收錄單字會使用裝置美語語音。美語音色為 Microsoft Jenny Neural，以 [edge-tts](https://github.com/rany2/edge-tts) 產生後隨網站保存，遊玩時不連線呼叫語音服務。角色動作台詞使用 Guy Neural 美語音色；單字維持 Jenny 的自然標準美語。背景音樂為程式內原創編曲，以 Web Audio 即時合成。預設音量為配樂 12%、音效 35%、語音 100%。播放語音時，配樂與殘響淡出為零、音效降低至原先的 12%；結束後緩慢恢復。舊設定會一次性套用較安靜的混音，保留課次與遊戲進度。
-
-## 字庫與來源
-
-共 231 種拼字，保留 320 筆課表紀錄（FET 170、CET 150）及 33 個分組。遊戲按拼字去重，可依原課次篩選。
-
-來源為康橋國際學校 G1 2026 秋季 [FET](https://passport.kcis.ntpc.edu.tw/WebFiles/EClass/2211/FET%202026%20Fall%20Vocab%20List%20G1.pdf) 與 [CET](https://passport.kcis.ntpc.edu.tw/WebFiles/EClass/2211/CET%202026%20Fall%20Vocab%20List%20G1.pdf) 單字表。原表未附中文，中文為補充翻譯，部分多義字保留常見意思。學校單字表的權利歸原來源所有。
-
-## 檢查與發布
-
-```sh
-node --test tests/*.test.mjs
-```
-
-檢查課程篩選、四選一、字母完整性、魔王血量、全部單字錄音覆蓋、園區步速與離開時取消動作、舊音量遷移與語音優先混音。
-
-`dist/` 是可直接部署的靜態網站。GitHub 上修改後，仍需把同一版本重新發布至遊戲網站。
-
-此儲存庫僅保存網站程式、素材、字庫與必要使用說明。專案討論、設計筆記、生成提示與 SKILL.md 留在本機，不納入 GitHub。
+Only website source, assets, game data, deployment code, and tests belong in this repository. Keep credentials, local authoring tools, design prompts, SKILL.md, and discussion notes outside it.
