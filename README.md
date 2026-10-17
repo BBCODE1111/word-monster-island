@@ -12,8 +12,11 @@
 - 每趟五隻小怪加魔王。魔王三格血量，答對三題才能捕捉。
 - 不限時或每題 15／25／40 秒。首次發音完成後倒數，可暫停，切分頁自動暫停。
 - 可選 CET／FET 全部、合併字庫，或複選 Week／Lesson。
-- 使用瀏覽器英文語音，按喇叭可重聽。建議 Chrome、Edge 或 Safari，並開啟裝置聲音。
+- 內建 Jenny 自然美語錄音，231 個拼字都有獨立片段；按喇叭可重聽。錄音不可用時改用裝置的美語語音。首次點擊畫面才啟用聲音。
 - 無提示首次答對 100 分，重試答對 70 分，使用提示答對 50 分。
+- 答對時研究員施放捕捉光束，答錯時怪物反擊、主角後退並展開護盾；附動作配音與各怪物叫聲，動畫中暫停倒數。
+- 原創日系冒險旋律，園區與魔王有不同配樂。配樂、音效、美語音量可分別調整，發音時配樂自動降低音量。
+- 已捕捉夥伴會在園區自由散步，可集合、餵點心、點擊互動，返回時保留關卡。
 - 圖鑑、學習足跡和選單設定存在目前瀏覽器，不跨裝置同步。
 
 ## 本機啟動
@@ -31,17 +34,22 @@ python3 -m http.server 4187 --directory dist
 | 檔案 | 用途 |
 | --- | --- |
 | `dist/app.js` | 選單、發音、出題、時間、捕捉動畫與圖鑑 |
+| `dist/audio.mjs` | 原創配樂、音效、怪物叫聲、美語錄音播放器與備援語音 |
+| `dist/battle.mjs` | 攻擊、反擊、捕捉動作及可取消的配音流程 |
+| `dist/park.mjs` | 園區散步、集合和互動 |
 | `dist/engine.mjs` | 怪物名稱與描述、題庫篩選、洗牌和魔王規則 |
 | `dist/style.css` | 桌機／手機版面、色彩與動畫 |
 | `dist/index.html` | 網站標題、圖示與入口 |
 | `dist/assets/` | 原創怪物圖集、研究員主角與森林場景 |
 | `dist/data/vocabulary.json` | 遊戲實際讀取的單字資料 |
 | `data/` | 單字資料庫、JSON 與中文翻譯對照備份 |
-| `tests/engine.test.mjs` | 遊戲規則檢查 |
+| `tests/` | 遊戲規則、語音覆蓋、園區移動與動作取消檢查 |
 
 要調整遊戲文字或單字意思，請修改 `dist/data/vocabulary.json` 中的資料；`cards` 保存詞性與中文，`groups` 保存週次／Lesson。`data/` 的檔案供資料庫查詢與維護參考，不會被遊戲自動載入。
 
-怪物圖集為 3 欄 × 2 列透明 PNG，`.monster-0` 至 `.monster-5` 對應六個位置，換圖時請維持此排版。原創主角使用 `researcher-v2.png`。
+怪物圖集為 3 欄 × 2 列透明 PNG，`.monster-0` 至 `.monster-5` 對應六個位置，換圖時請維持此排版。原創主角使用 `researcher-v2.png`，動作圖集為 `researcher-actions.png`，由 CSS 選取施放、受擊與慶祝三個姿勢。
+
+`american-voice.mp3` 與同名 JSON 保存美語單字錄音及秒數索引；`battle-voices.mp3` 與 JSON 保存動作台詞。修改或新增拼字時，需要一併補上錄音索引，未收錄單字會使用裝置美語語音。美語音色為 Microsoft Jenny Neural，以 [edge-tts](https://github.com/rany2/edge-tts) 產生後隨網站保存，遊玩時不連線呼叫語音服務。背景音樂為程式內原創編曲，以 Web Audio 即時合成。
 
 ## 字庫與來源
 
@@ -52,10 +60,10 @@ python3 -m http.server 4187 --directory dist
 ## 檢查與發布
 
 ```sh
-node --test tests/engine.test.mjs
+node --test tests/*.test.mjs
 ```
 
-檢查課程篩選、四選一、字母完整性、抽題重複與魔王血量。
+檢查課程篩選、四選一、字母完整性、魔王血量、全部單字錄音覆蓋、園區步速與離開時取消動作。
 
 `dist/` 是可直接部署的靜態網站。GitHub 上修改後，仍需把同一版本重新發布至遊戲網站。
 
