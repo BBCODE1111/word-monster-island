@@ -111,6 +111,7 @@ export function reduceGame(state,action,data,catalog,opts={}){
  const next=structuredClone(state);switch(action.type){
  case 'starter':if(next.profile)throw Error('A starter has already joined your team.');next.profile=newProfile(action.speciesId,catalog,opts);break;
  case 'start':if(next.mission?.egg&&!next.mission.egg.hatched)throw Error('Hatch your discovery egg first.');if(next.mission?.phase==='question'||next.mission?.phase==='result')throw Error('Finish or leave your current mission first.');next.mission=beginMission(next.profile,action.settings,data,catalog,opts);break;
+ case 'restart':if(next.mission?.egg&&!next.mission.egg.hatched)throw Error('Hatch your discovery egg first.');if(!['question','result'].includes(next.mission?.phase))throw Error('No active mission to restart.');next.mission=beginMission(next.profile,action.settings,data,catalog,opts);break;
  case 'answer':answerQuestion(next.profile,next.mission,action,data,catalog,opts);break;
  case 'next':advanceMission(next.profile,next.mission,data,catalog,opts);break;
  case 'recruit':{const m=next.mission,inst=next.profile.inventory.find(x=>x.id===action.id);if(!m||m.phase!=='result'||!m.captures.includes(action.id)||!inst)throw Error('Catch this teammate first.');if(!next.profile.team.includes(inst.id)){if(next.profile.team.length===3)next.profile.team=next.profile.team.filter(id=>id!==m.active);next.profile.team.push(inst.id);}const stats=monsterStats(inst,catalog);m.vitals[inst.id]??={hp:stats.hp,mp:stats.mp};m.active=inst.id;break;}
