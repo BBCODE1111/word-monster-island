@@ -1,0 +1,11 @@
+{
+  "name": "word-monster-island",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Original illustrated English vocabulary monster-catching game for Grade 1 CET/FET",
+  "scripts": {
+    "start": "python3 -m http.server 4173 --directory dist",
+    "test": "node --test tests/*.test.mjs"
+  }
+}
