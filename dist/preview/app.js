@@ -4,7 +4,7 @@ import {selectPool} from './engine.mjs';
 import {BattleAction} from './battle.mjs';
 import {MonsterPark} from './park.mjs';
 import {RangerCloud} from './cloud.mjs';
-import {MISSION_STAGES,RARITIES,UNLOCKS,CATCH_RATES,STAT_KEYS,monsterStats,quality,rosterSummary,migrateLegacy,reduceGame,canCatch,specialCost,encounterOdds} from './rpg.mjs';
+import {MISSION_STAGES,RARITIES,UNLOCKS,CATCH_RATES,STAT_KEYS,monsterStats,quality,rosterSummary,migrateLegacy,reduceGame,canCatch,specialCost,encounterOdds} from './rpg.mjs?v=restart-20261018';
 const $=s=>document.querySelector(s),app=$('#app'),modal=$('#modal');
 const icon=(name,cls='')=>`<svg class="icon ${cls}" aria-hidden="true"><use href="#i-${name}"></use></svg>`;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
