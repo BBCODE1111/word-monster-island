@@ -7,21 +7,21 @@ export class BattleAction{
  label(text){if(this.stopped)return;this.caption.textContent=text;this.caption.classList.add('visible');}
  fx(markup){if(!this.stopped)this.arena.insertAdjacentHTML('beforeend',markup);}
  pose(name){this.hero.classList.remove('casting','hurt','celebrating');if(name)this.hero.classList.add(name);}
- async play(kind,index,final=false){
+ async play(kind,index,final=false,details={}){
   if(kind==='wrong'){
-   this.arena.classList.add('retaliating');this.enemy.classList.add('counterattack');this.label(MONSTER_MOVES[index]+'!');this.audio.cry(index);this.audio.effect('wrong');this.fx('<div class="enemy-projectile action-fx"></div>');
-   if(!await this.wait(440))return;this.pose('hurt');this.arena.classList.add('shield-impact');this.audio.effect('impact');this.fx('<div class="hero-shield action-fx"></div><div class="battle-float action-fx">SHIELD BLOCK!</div>');
-   this.label('Shield block! Listen again. You can do it.');await this.voice('@hurt');if(!await this.wait(300))return;
+   this.arena.classList.add('retaliating');this.enemy.classList.add('counterattack');this.label((details.enemyMove||MONSTER_MOVES[index%6])+'!');this.audio.cry(index);this.audio.effect('wrong');this.fx('<div class="enemy-projectile action-fx"></div>');
+   if(!await this.wait(440))return;this.pose('hurt');this.arena.classList.add('shield-impact');this.audio.effect('impact');this.fx('<div class="hero-shield action-fx"></div><div class="battle-float action-fx">TEAM HIT!</div>');
+   this.label('Team HP −'+(details.counterDamage||0)+'. Listen and try again.');await this.voice('@hurt');if(!await this.wait(300))return;
   }else{
-   this.arena.classList.add('link-attack');this.pose('casting');this.label('WORDLINK · LINK BEAM!');this.audio.effect('attack');const call=this.voice('@attack');this.fx('<div class="charge-orb action-fx"></div>');
+   this.arena.classList.add('link-attack');this.pose('casting');this.label(kind==='capture'||kind==='miss'?'WORDLINK · CAPTURE BEAM!':details.move||'TEAM ATTACK!');this.audio.effect('attack');const call=this.voice('@attack');this.fx('<div class="charge-orb action-fx"></div>');
    if(!await this.wait(420))return;this.fx('<div class="capture-beam action-fx"></div>');this.audio.effect('beam');
    if(!await this.wait(370))return;this.enemy.classList.add('impact-hit');this.audio.cry(index);this.fx('<div class="impact-burst action-fx"></div>');
    if(kind==='capture'){
     if(!await this.wait(300))return;this.fx('<div class="scan-ring action-fx"></div><div class="capture-light action-fx"></div>');this.enemy.classList.add('captured');this.audio.effect('success');
-   }else{this.audio.effect('hit');this.fx('<div class="damage-number action-fx">−1 HP</div>');}
+   }else if(kind==='miss'){this.audio.effect('wrong');this.fx('<div class="damage-number action-fx">BROKE FREE!</div>');}else{this.audio.effect('hit');this.fx('<div class="damage-number action-fx">−'+(details.damage||1)+' HP</div>');}
    await call;if(this.stopped)return;
    if(kind==='capture'){this.pose('celebrating');this.label('CAUGHT! A new teammate joined.');this.fx('<div class="friend-stars action-fx">✦ &nbsp; ✧ &nbsp; ✦</div>');await this.voice(final?'@victory':'@capture');}
-   else{this.label('DIRECT HIT! Boss HP −1');await this.voice('@hit');}
+   else if(kind==='miss'){this.label('Broke free! Listen and try another word.');await this.voice('@hurt');}else{this.label('DIRECT HIT! −'+(details.damage||1)+' HP');await this.voice('@hit');}
    if(!await this.wait(280))return;
   }
  }
