@@ -10,7 +10,7 @@ test('every source spelling has its own finite US audio clip, including read and
  assert.equal(manifest.locale,'en-US');assert.deepEqual(new Set(Object.keys(manifest.words)),words);
  const seconds=readFileSync(new URL('../dist/assets/american-voice.mp3',import.meta.url)).length*8/48000;
  for(const clip of Object.values(manifest.words)){assert.ok(clip.start>=0&&clip.duration>.1&&clip.start+clip.duration<=seconds);}
- const cues=read('assets/battle-voices.json');for(const key of ['@attack','@hurt','@capture','@hit','@victory','@pet'])assert.ok(cues.words[key]?.text&&cues.words[key].duration>.1);
+ const cues=read('assets/battle-voices-v3.json');for(const key of ['@attack','@hurt','@capture','@hit','@victory','@pet'])assert.ok(cues.words[key]?.text&&cues.words[key].duration>.1);
 });
 test('speech fallback prefers a natural American voice and never picks British or novelty voices',()=>{
  const list=[{name:'Ava Natural',lang:'en-GB'},{name:'Boing',lang:'en-US'},{name:'Samantha',lang:'en-US'},{name:'Jenny Online (Natural)',lang:'en-US'}];assert.equal(chooseAmericanVoice(list).name,'Jenny Online (Natural)');assert.equal(chooseAmericanVoice(list.slice(0,2)),null);
@@ -30,4 +30,16 @@ test('leaving during a counterattack cancels every pending delay and cleans effe
 });
 test('leaving during a voiced line releases the waiting animation immediately',async()=>{
  const {node}=mockArena();const action=new BattleAction(node,{}, {play:()=>Promise.resolve(),stop(){}});const pending=action.voice('@hurt');action.cancel();await pending;assert.equal(action.timers.size,0);
+});
+
+test('existing players receive the quieter voice-first mix once, without losing preferences',async()=>{
+ const {migrateAudioSettings}=await import('../dist/audio.mjs');
+ const updated=migrateAudioSettings({musicVolume:.32,sfxVolume:.5,voiceVolume:.6,music:false,mode:'spell',groupIds:['cet-w03']});
+ assert.equal(updated.musicVolume,.12);assert.equal(updated.sfxVolume,.35);assert.equal(updated.voiceVolume,1);assert.equal(updated.music,false);assert.equal(updated.mode,'spell');assert.deepEqual(updated.groupIds,['cet-w03']);
+ assert.equal(migrateAudioSettings({...updated,musicVolume:.2}).musicVolume,.2);
+});
+test('speech silences music and reverb even at full music volume, while keeping the voice clear',async()=>{
+ const {audioMix}=await import('../dist/audio.mjs');const settings={music:true,sfx:true,musicVolume:1,sfxVolume:.5,voiceVolume:1};
+ const speaking=audioMix(settings,{ducked:true});assert.equal(speaking.music,0);assert.equal(speaking.reverb,0);assert.equal(speaking.voice,1);assert.equal(speaking.effects,.06);
+ assert.equal(audioMix(settings).music,1);assert.equal(audioMix(settings,{visible:false}).music,0);
 });
