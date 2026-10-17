@@ -1,10 +1,10 @@
 export const MONSTERS = [
-  {id:'leaf',name:'芽芽兔',en:'Mochileaf',type:'森林系',color:'#63a978',description:'用葉子耳朵收集晨露，口袋裡總有一顆準備送給朋友的橡實。'},
-  {id:'cloud',name:'星眠喵',en:'Lunapuff',type:'星空系',color:'#a398cf',description:'尾巴藏著一整片星空，打哈欠時會掉出小小的星光。'},
-  {id:'honey',name:'蜜羽啾',en:'Sungriff',type:'陽光系',color:'#dbad47',description:'戴著最喜歡的橘色圍巾，一開心就會拍出蜂蜜香的微風。'},
-  {id:'blossom',name:'櫻咕龍',en:'Sakurill',type:'花海系',color:'#e99baf',description:'閃亮的鰓像櫻花，最愛把海邊撿到的貝殼做成小飾品。'},
-  {id:'water',name:'泡泡獺',en:'Wavotti',type:'水波系',color:'#65b1cd',description:'抱著水滴寶石，在浪花尾巴裡收藏每次冒險的回憶。'},
-  {id:'boss',name:'花冠星龍',en:'Florastella',type:'星花守護者',color:'#ab8cce',description:'守護單字獸島的溫柔小龍。完成三道單字考驗，就能成為牠的朋友。'}
+ {id:'leaf',name:'Budbolt',en:'LEAF RUNNER',type:'LEAF',color:'#60a83c',description:'Blade-shaped ears slice through tall grass. Fast feet, brave heart.'},
+ {id:'cloud',name:'Sparklynx',en:'VOLT SCOUT',type:'VOLT',color:'#338ab5',description:'A quick scout with a lightning tail. Its sharp ears sense a storm before it arrives.'},
+ {id:'honey',name:'Dashwing',en:'SKY STRIKER',type:'WIND',color:'#ed9c32',description:'Golden wing blades cut through the wind. Always first to spot the next challenge.'},
+ {id:'blossom',name:'Emberax',en:'MAGMA DRAKE',type:'FIRE',color:'#d75937',description:'A tough little drake with warm armor plates. It charges into every mission with courage.'},
+ {id:'water',name:'Tiderush',en:'SURF GUARD',type:'WATER',color:'#219fbc',description:'Armored paws and a powerful paddle tail. This sea scout never leaves a teammate behind.'},
+ {id:'boss',name:'Stormcrest',en:'RIDGE GUARDIAN',type:'STORM',color:'#287d99',description:'Guardian of Frontier Ridge. Land three word links to earn its trust and recruit it to your team.'}
 ];
 export function shuffle(items, random=Math.random) {
  const a=[...items]; for(let i=a.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;
@@ -24,7 +24,7 @@ export function scramble(word,random=Math.random){
  return letters.map((letter,id)=>({id,letter}));
 }
 export class Adventure {
- constructor(pool,{random=Math.random}={}){if(!pool.length)throw Error('請至少選擇一個單字分組');this.pool=uniqueWords(pool);this.random=random;this.deck=[];this.stage=0;this.bossHp=3;this.captures=[];this.correct=0;this.attempts=0;this.lastWord=null;}
+ constructor(pool,{random=Math.random}={}){if(!pool.length)throw Error('Choose at least one word unit.');this.pool=uniqueWords(pool);this.random=random;this.deck=[];this.stage=0;this.bossHp=3;this.captures=[];this.correct=0;this.attempts=0;this.lastWord=null;}
  get boss(){return this.stage===5;}
  get done(){return this.stage===6;}
  draw(){if(!this.deck.length)this.deck=shuffle(this.pool,this.random);if(this.deck.length>1&&this.deck.at(-1).english===this.lastWord)[this.deck[0],this.deck[this.deck.length-1]]=[this.deck.at(-1),this.deck[0]];const card=this.deck.pop();this.lastWord=card.english;return card;}
