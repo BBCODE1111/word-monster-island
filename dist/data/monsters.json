@@ -1,0 +1,2802 @@
+[
+  {
+    "id": "leaf",
+    "dex": 1,
+    "name": "Budbolt",
+    "en": "LEAF COMMON",
+    "type": "LEAF",
+    "rarity": "Common",
+    "color": "#52a94e",
+    "description": "Blade-shaped ears slice through tall grass. Fast feet, brave heart.",
+    "ability": {
+      "name": "Root Guard",
+      "description": "Takes 10% less damage from attacks."
+    },
+    "specialMove": "Leaf Burst",
+    "baseStats": {
+      "hp": 72,
+      "mp": 41,
+      "attack": 28,
+      "defense": 28,
+      "special": 25
+    },
+    "sprite": {
+      "file": "assets/monsters-v3.png",
+      "columns": 3,
+      "rows": 2,
+      "index": 0
+    }
+  },
+  {
+    "id": "cloud",
+    "dex": 2,
+    "name": "Sparklynx",
+    "en": "VOLT UNCOMMON",
+    "type": "VOLT",
+    "rarity": "Uncommon",
+    "color": "#e5ad39",
+    "description": "A quick scout with a lightning tail and sharp storm-sensing ears.",
+    "ability": {
+      "name": "Charge Up",
+      "description": "Special moves use 2 less MP."
+    },
+    "specialMove": "Volt Arc",
+    "baseStats": {
+      "hp": 66,
+      "mp": 49,
+      "attack": 34,
+      "defense": 24,
+      "special": 35
+    },
+    "sprite": {
+      "file": "assets/monsters-v3.png",
+      "columns": 3,
+      "rows": 2,
+      "index": 1
+    }
+  },
+  {
+    "id": "honey",
+    "dex": 3,
+    "name": "Dashwing",
+    "en": "WIND COMMON",
+    "type": "WIND",
+    "rarity": "Common",
+    "color": "#52aebc",
+    "description": "Golden wing blades cut through the wind. First to spot a challenge.",
+    "ability": {
+      "name": "Tailwind",
+      "description": "Basic attacks restore 2 extra MP."
+    },
+    "specialMove": "Gale Cutter",
+    "baseStats": {
+      "hp": 61,
+      "mp": 46,
+      "attack": 28,
+      "defense": 22,
+      "special": 26
+    },
+    "sprite": {
+      "file": "assets/monsters-v3.png",
+      "columns": 3,
+      "rows": 2,
+      "index": 2
+    }
+  },
+  {
+    "id": "blossom",
+    "dex": 4,
+    "name": "Emberax",
+    "en": "FIRE UNCOMMON",
+    "type": "FIRE",
+    "rarity": "Uncommon",
+    "color": "#dc663a",
+    "description": "A tough little drake with warm armor plates and a brave heart.",
+    "ability": {
+      "name": "Blaze Drive",
+      "description": "Deals 10% more basic attack damage."
+    },
+    "specialMove": "Ember Rush",
+    "baseStats": {
+      "hp": 73,
+      "mp": 42,
+      "attack": 40,
+      "defense": 25,
+      "special": 33
+    },
+    "sprite": {
+      "file": "assets/monsters-v3.png",
+      "columns": 3,
+      "rows": 2,
+      "index": 3
+    }
+  },
+  {
+    "id": "water",
+    "dex": 5,
+    "name": "Tiderush",
+    "en": "WATER COMMON",
+    "type": "WATER",
+    "rarity": "Common",
+    "color": "#289dc4",
+    "description": "Armored paws and a strong paddle tail. Never leaves a teammate behind.",
+    "ability": {
+      "name": "Wave Shield",
+      "description": "Takes 10% less damage from special moves."
+    },
+    "specialMove": "Tidal Crash",
+    "baseStats": {
+      "hp": 74,
+      "mp": 51,
+      "attack": 28,
+      "defense": 26,
+      "special": 27
+    },
+    "sprite": {
+      "file": "assets/monsters-v3.png",
+      "columns": 3,
+      "rows": 2,
+      "index": 4
+    }
+  },
+  {
+    "id": "boss",
+    "dex": 6,
+    "name": "Stormcrest",
+    "en": "STORM EPIC",
+    "type": "STORM",
+    "rarity": "Epic",
+    "color": "#397cbd",
+    "description": "The powerful guardian of Frontier Ridge, loyal to a patient ranger.",
+    "ability": {
+      "name": "Storm Core",
+      "description": "Deals 8% more damage with every move."
+    },
+    "specialMove": "Storm Break",
+    "baseStats": {
+      "hp": 89,
+      "mp": 58,
+      "attack": 42,
+      "defense": 35,
+      "special": 45
+    },
+    "sprite": {
+      "file": "assets/monsters-v3.png",
+      "columns": 3,
+      "rows": 2,
+      "index": 5
+    }
+  },
+  {
+    "id": "m007",
+    "dex": 7,
+    "name": "Cindermite",
+    "en": "FIRE COMMON",
+    "type": "FIRE",
+    "rarity": "Common",
+    "color": "#dc663a",
+    "description": "A small coal beetle with ember vents and amber wing armor.",
+    "ability": {
+      "name": "Blaze Drive",
+      "description": "Deals 10% more basic attack damage."
+    },
+    "specialMove": "Ember Rush",
+    "baseStats": {
+      "hp": 65,
+      "mp": 37,
+      "attack": 31,
+      "defense": 19,
+      "special": 30
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 0
+    }
+  },
+  {
+    "id": "m008",
+    "dex": 8,
+    "name": "Brambleboar",
+    "en": "LEAF COMMON",
+    "type": "LEAF",
+    "rarity": "Common",
+    "color": "#52a94e",
+    "description": "A stocky forest boar with briar shoulder plates and leaf tusks.",
+    "ability": {
+      "name": "Root Guard",
+      "description": "Takes 10% less damage from attacks."
+    },
+    "specialMove": "Leaf Burst",
+    "baseStats": {
+      "hp": 72,
+      "mp": 41,
+      "attack": 28,
+      "defense": 28,
+      "special": 25
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 1
+    }
+  },
+  {
+    "id": "m009",
+    "dex": 9,
+    "name": "Pebblit",
+    "en": "STONE COMMON",
+    "type": "STONE",
+    "rarity": "Common",
+    "color": "#9a8267",
+    "description": "A round pebble armadillo with layered slate armor and orange eyes.",
+    "ability": {
+      "name": "Stonewall",
+      "description": "Takes 15% less basic attack damage."
+    },
+    "specialMove": "Rock Breaker",
+    "baseStats": {
+      "hp": 89,
+      "mp": 28,
+      "attack": 29,
+      "defense": 36,
+      "special": 17
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 2
+    }
+  },
+  {
+    "id": "m010",
+    "dex": 10,
+    "name": "Rivlet",
+    "en": "WATER COMMON",
+    "type": "WATER",
+    "rarity": "Common",
+    "color": "#289dc4",
+    "description": "A quick blue river newt with white gills and a paddle tail.",
+    "ability": {
+      "name": "Wave Shield",
+      "description": "Takes 10% less damage from special moves."
+    },
+    "specialMove": "Tidal Crash",
+    "baseStats": {
+      "hp": 75,
+      "mp": 50,
+      "attack": 25,
+      "defense": 28,
+      "special": 27
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 3
+    }
+  },
+  {
+    "id": "m011",
+    "dex": 11,
+    "name": "Zippuff",
+    "en": "VOLT COMMON",
+    "type": "VOLT",
+    "rarity": "Common",
+    "color": "#e5ad39",
+    "description": "A yellow blue spiky sparrow with tiny charged wing feathers.",
+    "ability": {
+      "name": "Charge Up",
+      "description": "Special moves use 2 less MP."
+    },
+    "specialMove": "Volt Arc",
+    "baseStats": {
+      "hp": 62,
+      "mp": 47,
+      "attack": 34,
+      "defense": 19,
+      "special": 32
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 4
+    }
+  },
+  {
+    "id": "m012",
+    "dex": 12,
+    "name": "Gustail",
+    "en": "WIND COMMON",
+    "type": "WIND",
+    "rarity": "Common",
+    "color": "#52aebc",
+    "description": "A teal gliding weasel with wind fins and a ribbonlike striped tail.",
+    "ability": {
+      "name": "Tailwind",
+      "description": "Basic attacks restore 2 extra MP."
+    },
+    "specialMove": "Gale Cutter",
+    "baseStats": {
+      "hp": 60,
+      "mp": 47,
+      "attack": 31,
+      "defense": 20,
+      "special": 26
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 5
+    }
+  },
+  {
+    "id": "m013",
+    "dex": 13,
+    "name": "Mossnap",
+    "en": "LEAF COMMON",
+    "type": "LEAF",
+    "rarity": "Common",
+    "color": "#52a94e",
+    "description": "A moss-armored snapping turtle with blunt leaf jaws.",
+    "ability": {
+      "name": "Root Guard",
+      "description": "Takes 10% less damage from attacks."
+    },
+    "specialMove": "Leaf Burst",
+    "baseStats": {
+      "hp": 73,
+      "mp": 40,
+      "attack": 25,
+      "defense": 23,
+      "special": 25
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 6
+    }
+  },
+  {
+    "id": "m014",
+    "dex": 14,
+    "name": "Rusthorn",
+    "en": "STONE COMMON",
+    "type": "STONE",
+    "rarity": "Common",
+    "color": "#9a8267",
+    "description": "A compact rust-orange rhinoceros with blunt rocky horn and heavy feet.",
+    "ability": {
+      "name": "Stonewall",
+      "description": "Takes 15% less basic attack damage."
+    },
+    "specialMove": "Rock Breaker",
+    "baseStats": {
+      "hp": 83,
+      "mp": 27,
+      "attack": 26,
+      "defense": 31,
+      "special": 17
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 7
+    }
+  },
+  {
+    "id": "m015",
+    "dex": 15,
+    "name": "Splashfin",
+    "en": "WATER COMMON",
+    "type": "WATER",
+    "rarity": "Common",
+    "color": "#289dc4",
+    "description": "A sleek sea lion pup with turquoise fin bracers and white chest.",
+    "ability": {
+      "name": "Wave Shield",
+      "description": "Takes 10% less damage from special moves."
+    },
+    "specialMove": "Tidal Crash",
+    "baseStats": {
+      "hp": 76,
+      "mp": 49,
+      "attack": 29,
+      "defense": 30,
+      "special": 27
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 8
+    }
+  },
+  {
+    "id": "m016",
+    "dex": 16,
+    "name": "Glimant",
+    "en": "LIGHT COMMON",
+    "type": "LIGHT",
+    "rarity": "Common",
+    "color": "#d3ac47",
+    "description": "A golden armored ant with a shining head crest and four strong legs.",
+    "ability": {
+      "name": "Bright Mind",
+      "description": "Recovers 5 HP after a correct word."
+    },
+    "specialMove": "Prism Ray",
+    "baseStats": {
+      "hp": 69,
+      "mp": 50,
+      "attack": 25,
+      "defense": 25,
+      "special": 35
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 9
+    }
+  },
+  {
+    "id": "m017",
+    "dex": 17,
+    "name": "Duskbat",
+    "en": "SHADE COMMON",
+    "type": "SHADE",
+    "rarity": "Common",
+    "color": "#7461b4",
+    "description": "A dark navy bat with broad angular wings and orange inner ears.",
+    "ability": {
+      "name": "Shadow Step",
+      "description": "Special attacks ignore 15% of enemy defense."
+    },
+    "specialMove": "Night Slash",
+    "baseStats": {
+      "hp": 63,
+      "mp": 50,
+      "attack": 30,
+      "defense": 21,
+      "special": 33
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 10
+    }
+  },
+  {
+    "id": "m018",
+    "dex": 18,
+    "name": "Ferrick",
+    "en": "METAL COMMON",
+    "type": "METAL",
+    "rarity": "Common",
+    "color": "#7895aa",
+    "description": "A silver plated ferret with copper paws and a steel fan tail.",
+    "ability": {
+      "name": "Steel Skin",
+      "description": "Reduces each incoming hit by 3 HP."
+    },
+    "specialMove": "Metal Crash",
+    "baseStats": {
+      "hp": 84,
+      "mp": 33,
+      "attack": 33,
+      "defense": 36,
+      "special": 20
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 11
+    }
+  },
+  {
+    "id": "m019",
+    "dex": 19,
+    "name": "Chillop",
+    "en": "FROST COMMON",
+    "type": "FROST",
+    "rarity": "Common",
+    "color": "#79c9da",
+    "description": "A ice-blue seal with snow collar and angular icy flippers.",
+    "ability": {
+      "name": "Cold Focus",
+      "description": "Special attacks deal 10% extra damage."
+    },
+    "specialMove": "Frost Lance",
+    "baseStats": {
+      "hp": 70,
+      "mp": 49,
+      "attack": 27,
+      "defense": 28,
+      "special": 29
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 12
+    }
+  },
+  {
+    "id": "m020",
+    "dex": 20,
+    "name": "Pyrokit",
+    "en": "FIRE COMMON",
+    "type": "FIRE",
+    "rarity": "Common",
+    "color": "#dc663a",
+    "description": "A rust-red fox cub with black ear tips and a broad coal-striped tail.",
+    "ability": {
+      "name": "Blaze Drive",
+      "description": "Deals 10% more basic attack damage."
+    },
+    "specialMove": "Ember Rush",
+    "baseStats": {
+      "hp": 69,
+      "mp": 40,
+      "attack": 33,
+      "defense": 20,
+      "special": 30
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 13
+    }
+  },
+  {
+    "id": "m021",
+    "dex": 21,
+    "name": "Thornox",
+    "en": "LEAF COMMON",
+    "type": "LEAF",
+    "rarity": "Common",
+    "color": "#52a94e",
+    "description": "A green ox calf with sapling horns and bark shield shoulders.",
+    "ability": {
+      "name": "Root Guard",
+      "description": "Takes 10% less damage from attacks."
+    },
+    "specialMove": "Leaf Burst",
+    "baseStats": {
+      "hp": 69,
+      "mp": 37,
+      "attack": 23,
+      "defense": 22,
+      "special": 25
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 14
+    }
+  },
+  {
+    "id": "m022",
+    "dex": 22,
+    "name": "Sandjaw",
+    "en": "STONE COMMON",
+    "type": "STONE",
+    "rarity": "Common",
+    "color": "#9a8267",
+    "description": "A sand-colored crocodile with layered sandstone back ridges.",
+    "ability": {
+      "name": "Stonewall",
+      "description": "Takes 15% less basic attack damage."
+    },
+    "specialMove": "Rock Breaker",
+    "baseStats": {
+      "hp": 86,
+      "mp": 31,
+      "attack": 31,
+      "defense": 37,
+      "special": 17
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-1.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 15
+    }
+  },
+  {
+    "id": "m023",
+    "dex": 23,
+    "name": "Skylatch",
+    "en": "WIND COMMON",
+    "type": "WIND",
+    "rarity": "Common",
+    "color": "#52aebc",
+    "description": "A sky-blue gecko with wide web glider membranes and navy fingers.",
+    "ability": {
+      "name": "Tailwind",
+      "description": "Basic attacks restore 2 extra MP."
+    },
+    "specialMove": "Gale Cutter",
+    "baseStats": {
+      "hp": 65,
+      "mp": 42,
+      "attack": 30,
+      "defense": 23,
+      "special": 26
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 0
+    }
+  },
+  {
+    "id": "m024",
+    "dex": 24,
+    "name": "Nimburk",
+    "en": "STORM COMMON",
+    "type": "STORM",
+    "rarity": "Common",
+    "color": "#397cbd",
+    "description": "A purple-blue boar with jagged thunder ridges and small gold tusks.",
+    "ability": {
+      "name": "Storm Core",
+      "description": "Deals 8% more damage with every move."
+    },
+    "specialMove": "Storm Break",
+    "baseStats": {
+      "hp": 77,
+      "mp": 50,
+      "attack": 31,
+      "defense": 28,
+      "special": 35
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 1
+    }
+  },
+  {
+    "id": "m025",
+    "dex": 25,
+    "name": "Ashclaw",
+    "en": "FIRE COMMON",
+    "type": "FIRE",
+    "rarity": "Common",
+    "color": "#dc663a",
+    "description": "A red basalt crab with huge charcoal pincers and ember seams.",
+    "ability": {
+      "name": "Blaze Drive",
+      "description": "Deals 10% more basic attack damage."
+    },
+    "specialMove": "Ember Rush",
+    "baseStats": {
+      "hp": 70,
+      "mp": 39,
+      "attack": 37,
+      "defense": 22,
+      "special": 30
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 2
+    }
+  },
+  {
+    "id": "m026",
+    "dex": 26,
+    "name": "Kelprow",
+    "en": "WATER COMMON",
+    "type": "WATER",
+    "rarity": "Common",
+    "color": "#289dc4",
+    "description": "A turquoise penguin with a kelp swept crest and fin armor.",
+    "ability": {
+      "name": "Wave Shield",
+      "description": "Takes 10% less damage from special moves."
+    },
+    "specialMove": "Tidal Crash",
+    "baseStats": {
+      "hp": 74,
+      "mp": 51,
+      "attack": 28,
+      "defense": 26,
+      "special": 27
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 3
+    }
+  },
+  {
+    "id": "m027",
+    "dex": 27,
+    "name": "Frostride",
+    "en": "FROST COMMON",
+    "type": "FROST",
+    "rarity": "Common",
+    "color": "#79c9da",
+    "description": "A snow lynx with short icy ear blades and slate paws.",
+    "ability": {
+      "name": "Cold Focus",
+      "description": "Special attacks deal 10% extra damage."
+    },
+    "specialMove": "Frost Lance",
+    "baseStats": {
+      "hp": 73,
+      "mp": 46,
+      "attack": 25,
+      "defense": 27,
+      "special": 29
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 4
+    }
+  },
+  {
+    "id": "m028",
+    "dex": 28,
+    "name": "Boltram",
+    "en": "VOLT COMMON",
+    "type": "VOLT",
+    "rarity": "Common",
+    "color": "#e5ad39",
+    "description": "A round ram with copper coil horns and charcoal lightning wool.",
+    "ability": {
+      "name": "Charge Up",
+      "description": "Special moves use 2 less MP."
+    },
+    "specialMove": "Volt Arc",
+    "baseStats": {
+      "hp": 57,
+      "mp": 45,
+      "attack": 28,
+      "defense": 16,
+      "special": 32
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 5
+    }
+  },
+  {
+    "id": "m029",
+    "dex": 29,
+    "name": "Ironib",
+    "en": "METAL COMMON",
+    "type": "METAL",
+    "rarity": "Common",
+    "color": "#7895aa",
+    "description": "A long-beaked silver ibis with steel blade feathers and orange legs.",
+    "ability": {
+      "name": "Steel Skin",
+      "description": "Reduces each incoming hit by 3 HP."
+    },
+    "specialMove": "Metal Crash",
+    "baseStats": {
+      "hp": 82,
+      "mp": 35,
+      "attack": 32,
+      "defense": 39,
+      "special": 20
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 6
+    }
+  },
+  {
+    "id": "m030",
+    "dex": 30,
+    "name": "Luminch",
+    "en": "LIGHT COMMON",
+    "type": "LIGHT",
+    "rarity": "Common",
+    "color": "#d3ac47",
+    "description": "A gold and white finch with prism-like beak and bright wing bands.",
+    "ability": {
+      "name": "Bright Mind",
+      "description": "Recovers 5 HP after a correct word."
+    },
+    "specialMove": "Prism Ray",
+    "baseStats": {
+      "hp": 69,
+      "mp": 50,
+      "attack": 25,
+      "defense": 25,
+      "special": 35
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 7
+    }
+  },
+  {
+    "id": "m031",
+    "dex": 31,
+    "name": "Shardillo",
+    "en": "STONE COMMON",
+    "type": "STONE",
+    "rarity": "Common",
+    "color": "#9a8267",
+    "description": "A stone armadillo with irregular amber crystal back plates.",
+    "ability": {
+      "name": "Stonewall",
+      "description": "Takes 15% less basic attack damage."
+    },
+    "specialMove": "Rock Breaker",
+    "baseStats": {
+      "hp": 85,
+      "mp": 32,
+      "attack": 27,
+      "defense": 35,
+      "special": 17
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 8
+    }
+  },
+  {
+    "id": "m032",
+    "dex": 32,
+    "name": "Inkettle",
+    "en": "SHADE COMMON",
+    "type": "SHADE",
+    "rarity": "Common",
+    "color": "#7461b4",
+    "description": "A navy squid with a helmet-shaped mantle and curling white-striped tentacles.",
+    "ability": {
+      "name": "Shadow Step",
+      "description": "Special attacks ignore 15% of enemy defense."
+    },
+    "specialMove": "Night Slash",
+    "baseStats": {
+      "hp": 66,
+      "mp": 47,
+      "attack": 35,
+      "defense": 20,
+      "special": 33
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 9
+    }
+  },
+  {
+    "id": "m033",
+    "dex": 33,
+    "name": "Fernfang",
+    "en": "LEAF COMMON",
+    "type": "LEAF",
+    "rarity": "Common",
+    "color": "#52a94e",
+    "description": "A green saber-toothed forest puppy with fern shoulder ruff.",
+    "ability": {
+      "name": "Root Guard",
+      "description": "Takes 10% less damage from attacks."
+    },
+    "specialMove": "Leaf Burst",
+    "baseStats": {
+      "hp": 70,
+      "mp": 43,
+      "attack": 27,
+      "defense": 24,
+      "special": 25
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 10
+    }
+  },
+  {
+    "id": "m034",
+    "dex": 34,
+    "name": "Cragoon",
+    "en": "STONE COMMON",
+    "type": "STONE",
+    "rarity": "Common",
+    "color": "#9a8267",
+    "description": "A grey ridgeback lizard with square stone back plates and orange belly.",
+    "ability": {
+      "name": "Stonewall",
+      "description": "Takes 15% less basic attack damage."
+    },
+    "specialMove": "Rock Breaker",
+    "baseStats": {
+      "hp": 87,
+      "mp": 30,
+      "attack": 28,
+      "defense": 32,
+      "special": 17
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 11
+    }
+  },
+  {
+    "id": "m035",
+    "dex": 35,
+    "name": "Whirroo",
+    "en": "WIND COMMON",
+    "type": "WIND",
+    "rarity": "Common",
+    "color": "#52aebc",
+    "description": "A teal kangaroo with spiral wind paw markings and a wide balancing tail.",
+    "ability": {
+      "name": "Tailwind",
+      "description": "Basic attacks restore 2 extra MP."
+    },
+    "specialMove": "Gale Cutter",
+    "baseStats": {
+      "hp": 59,
+      "mp": 41,
+      "attack": 27,
+      "defense": 18,
+      "special": 26
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 12
+    }
+  },
+  {
+    "id": "m036",
+    "dex": 36,
+    "name": "Sparknip",
+    "en": "VOLT UNCOMMON",
+    "type": "VOLT",
+    "rarity": "Uncommon",
+    "color": "#e5ad39",
+    "description": "A navy electric cricket with copper spring legs and cyan antennae.",
+    "ability": {
+      "name": "Charge Up",
+      "description": "Special moves use 2 less MP."
+    },
+    "specialMove": "Volt Arc",
+    "baseStats": {
+      "hp": 63,
+      "mp": 52,
+      "attack": 36,
+      "defense": 25,
+      "special": 35
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 13
+    }
+  },
+  {
+    "id": "m037",
+    "dex": 37,
+    "name": "Tundrill",
+    "en": "FROST UNCOMMON",
+    "type": "FROST",
+    "rarity": "Uncommon",
+    "color": "#79c9da",
+    "description": "A white badger with icicle digging claws and blue face stripes.",
+    "ability": {
+      "name": "Cold Focus",
+      "description": "Special attacks deal 10% extra damage."
+    },
+    "specialMove": "Frost Lance",
+    "baseStats": {
+      "hp": 78,
+      "mp": 47,
+      "attack": 29,
+      "defense": 34,
+      "special": 32
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 14
+    }
+  },
+  {
+    "id": "m038",
+    "dex": 38,
+    "name": "Flarestoat",
+    "en": "FIRE UNCOMMON",
+    "type": "FIRE",
+    "rarity": "Uncommon",
+    "color": "#dc663a",
+    "description": "A orange stoat with a charcoal armored neck and two fiery tail tips.",
+    "ability": {
+      "name": "Blaze Drive",
+      "description": "Deals 10% more basic attack damage."
+    },
+    "specialMove": "Ember Rush",
+    "baseStats": {
+      "hp": 70,
+      "mp": 45,
+      "attack": 35,
+      "defense": 26,
+      "special": 33
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-2.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 15
+    }
+  },
+  {
+    "id": "m039",
+    "dex": 39,
+    "name": "Coralisk",
+    "en": "WATER UNCOMMON",
+    "type": "WATER",
+    "rarity": "Uncommon",
+    "color": "#289dc4",
+    "description": "A coral-armored basilisk with blue sail fins and strong webbed toes.",
+    "ability": {
+      "name": "Wave Shield",
+      "description": "Takes 10% less damage from special moves."
+    },
+    "specialMove": "Tidal Crash",
+    "baseStats": {
+      "hp": 81,
+      "mp": 50,
+      "attack": 33,
+      "defense": 30,
+      "special": 30
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 0
+    }
+  },
+  {
+    "id": "m040",
+    "dex": 40,
+    "name": "Acornix",
+    "en": "LEAF UNCOMMON",
+    "type": "LEAF",
+    "rarity": "Uncommon",
+    "color": "#52a94e",
+    "description": "A brown squirrel with an acorn chest shield and a segmented green tail.",
+    "ability": {
+      "name": "Root Guard",
+      "description": "Takes 10% less damage from attacks."
+    },
+    "specialMove": "Leaf Burst",
+    "baseStats": {
+      "hp": 73,
+      "mp": 46,
+      "attack": 30,
+      "defense": 27,
+      "special": 28
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 1
+    }
+  },
+  {
+    "id": "m041",
+    "dex": 41,
+    "name": "Rumbite",
+    "en": "STONE UNCOMMON",
+    "type": "STONE",
+    "rarity": "Uncommon",
+    "color": "#9a8267",
+    "description": "A bulky grey mole with earth drill claws and copper goggles-like eye plates.",
+    "ability": {
+      "name": "Stonewall",
+      "description": "Takes 15% less basic attack damage."
+    },
+    "specialMove": "Rock Breaker",
+    "baseStats": {
+      "hp": 90,
+      "mp": 33,
+      "attack": 31,
+      "defense": 35,
+      "special": 20
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 2
+    }
+  },
+  {
+    "id": "m042",
+    "dex": 42,
+    "name": "Zephawk",
+    "en": "WIND UNCOMMON",
+    "type": "WIND",
+    "rarity": "Uncommon",
+    "color": "#52aebc",
+    "description": "A white and teal hawk with curved wind vane wing feathers.",
+    "ability": {
+      "name": "Tailwind",
+      "description": "Basic attacks restore 2 extra MP."
+    },
+    "specialMove": "Gale Cutter",
+    "baseStats": {
+      "hp": 62,
+      "mp": 44,
+      "attack": 30,
+      "defense": 21,
+      "special": 29
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 3
+    }
+  },
+  {
+    "id": "m043",
+    "dex": 43,
+    "name": "Coilisk",
+    "en": "VOLT UNCOMMON",
+    "type": "VOLT",
+    "rarity": "Uncommon",
+    "color": "#e5ad39",
+    "description": "A coiled navy serpent with gold spring-shaped body armor and cyan fangs.",
+    "ability": {
+      "name": "Charge Up",
+      "description": "Special moves use 2 less MP."
+    },
+    "specialMove": "Volt Arc",
+    "baseStats": {
+      "hp": 63,
+      "mp": 52,
+      "attack": 36,
+      "defense": 25,
+      "special": 35
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 4
+    }
+  },
+  {
+    "id": "m044",
+    "dex": 44,
+    "name": "Chromite",
+    "en": "METAL UNCOMMON",
+    "type": "METAL",
+    "rarity": "Uncommon",
+    "color": "#7895aa",
+    "description": "A chrome rhinoceros beetle with orange joint details and teal eyes.",
+    "ability": {
+      "name": "Steel Skin",
+      "description": "Reduces each incoming hit by 3 HP."
+    },
+    "specialMove": "Metal Crash",
+    "baseStats": {
+      "hp": 88,
+      "mp": 35,
+      "attack": 33,
+      "defense": 41,
+      "special": 23
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 5
+    }
+  },
+  {
+    "id": "m045",
+    "dex": 45,
+    "name": "Solstag",
+    "en": "LIGHT UNCOMMON",
+    "type": "LIGHT",
+    "rarity": "Uncommon",
+    "color": "#d3ac47",
+    "description": "A small golden stag with broad sun-blade antlers and white legs.",
+    "ability": {
+      "name": "Bright Mind",
+      "description": "Recovers 5 HP after a correct word."
+    },
+    "specialMove": "Prism Ray",
+    "baseStats": {
+      "hp": 68,
+      "mp": 57,
+      "attack": 26,
+      "defense": 27,
+      "special": 38
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 6
+    }
+  },
+  {
+    "id": "m046",
+    "dex": 46,
+    "name": "Duskrake",
+    "en": "SHADE UNCOMMON",
+    "type": "SHADE",
+    "rarity": "Uncommon",
+    "color": "#7461b4",
+    "description": "A black blue raven with hooked blade feathers and a white chest chevron.",
+    "ability": {
+      "name": "Shadow Step",
+      "description": "Special attacks ignore 15% of enemy defense."
+    },
+    "specialMove": "Night Slash",
+    "baseStats": {
+      "hp": 69,
+      "mp": 50,
+      "attack": 38,
+      "defense": 23,
+      "special": 36
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 7
+    }
+  },
+  {
+    "id": "m047",
+    "dex": 47,
+    "name": "Iceback",
+    "en": "FROST UNCOMMON",
+    "type": "FROST",
+    "rarity": "Uncommon",
+    "color": "#79c9da",
+    "description": "A armored blue turtle with a clear icy hexagonal shell.",
+    "ability": {
+      "name": "Cold Focus",
+      "description": "Special attacks deal 10% extra damage."
+    },
+    "specialMove": "Frost Lance",
+    "baseStats": {
+      "hp": 73,
+      "mp": 52,
+      "attack": 30,
+      "defense": 31,
+      "special": 32
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 8
+    }
+  },
+  {
+    "id": "m048",
+    "dex": 48,
+    "name": "Embergon",
+    "en": "FIRE UNCOMMON",
+    "type": "FIRE",
+    "rarity": "Uncommon",
+    "color": "#dc663a",
+    "description": "A red pangolin with charcoal flame-shaped back plates and orange claws.",
+    "ability": {
+      "name": "Blaze Drive",
+      "description": "Deals 10% more basic attack damage."
+    },
+    "specialMove": "Ember Rush",
+    "baseStats": {
+      "hp": 72,
+      "mp": 43,
+      "attack": 36,
+      "defense": 23,
+      "special": 33
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 9
+    }
+  },
+  {
+    "id": "m049",
+    "dex": 49,
+    "name": "Nautusk",
+    "en": "WATER UNCOMMON",
+    "type": "WATER",
+    "rarity": "Uncommon",
+    "color": "#289dc4",
+    "description": "A blue walrus with swept fin tusks and a white muzzle.",
+    "ability": {
+      "name": "Wave Shield",
+      "description": "Takes 10% less damage from special moves."
+    },
+    "specialMove": "Tidal Crash",
+    "baseStats": {
+      "hp": 76,
+      "mp": 48,
+      "attack": 27,
+      "defense": 27,
+      "special": 30
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 10
+    }
+  },
+  {
+    "id": "m050",
+    "dex": 50,
+    "name": "Vinepike",
+    "en": "LEAF UNCOMMON",
+    "type": "LEAF",
+    "rarity": "Uncommon",
+    "color": "#52a94e",
+    "description": "A emerald mantis with broad leaf-spear forearms and amber eyes.",
+    "ability": {
+      "name": "Root Guard",
+      "description": "Takes 10% less damage from attacks."
+    },
+    "specialMove": "Leaf Burst",
+    "baseStats": {
+      "hp": 75,
+      "mp": 44,
+      "attack": 31,
+      "defense": 31,
+      "special": 28
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 11
+    }
+  },
+  {
+    "id": "m051",
+    "dex": 51,
+    "name": "Gravox",
+    "en": "STONE UNCOMMON",
+    "type": "STONE",
+    "rarity": "Uncommon",
+    "color": "#9a8267",
+    "description": "A powerful grey ox with floating pebble shoulder pads and thick basalt horns.",
+    "ability": {
+      "name": "Stonewall",
+      "description": "Takes 15% less basic attack damage."
+    },
+    "specialMove": "Rock Breaker",
+    "baseStats": {
+      "hp": 92,
+      "mp": 31,
+      "attack": 32,
+      "defense": 39,
+      "special": 20
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 12
+    }
+  },
+  {
+    "id": "m052",
+    "dex": 52,
+    "name": "Slipstream",
+    "en": "WIND UNCOMMON",
+    "type": "WIND",
+    "rarity": "Uncommon",
+    "color": "#52aebc",
+    "description": "A sleek white navy fox with swept aerodynamic tail fins and teal feet.",
+    "ability": {
+      "name": "Tailwind",
+      "description": "Basic attacks restore 2 extra MP."
+    },
+    "specialMove": "Gale Cutter",
+    "baseStats": {
+      "hp": 64,
+      "mp": 49,
+      "attack": 31,
+      "defense": 25,
+      "special": 29
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 13
+    }
+  },
+  {
+    "id": "m053",
+    "dex": 53,
+    "name": "Voltick",
+    "en": "VOLT UNCOMMON",
+    "type": "VOLT",
+    "rarity": "Uncommon",
+    "color": "#e5ad39",
+    "description": "A round copper tick-like four-legged creature with a cyan lightning core.",
+    "ability": {
+      "name": "Charge Up",
+      "description": "Special moves use 2 less MP."
+    },
+    "specialMove": "Volt Arc",
+    "baseStats": {
+      "hp": 65,
+      "mp": 50,
+      "attack": 37,
+      "defense": 22,
+      "special": 35
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 14
+    }
+  },
+  {
+    "id": "m054",
+    "dex": 54,
+    "name": "Mechowl",
+    "en": "METAL UNCOMMON",
+    "type": "METAL",
+    "rarity": "Uncommon",
+    "color": "#7895aa",
+    "description": "A steel owl with chunky rotating feather plates and amber round eyes.",
+    "ability": {
+      "name": "Steel Skin",
+      "description": "Reduces each incoming hit by 3 HP."
+    },
+    "specialMove": "Metal Crash",
+    "baseStats": {
+      "hp": 83,
+      "mp": 40,
+      "attack": 34,
+      "defense": 38,
+      "special": 23
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-3.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 15
+    }
+  },
+  {
+    "id": "m055",
+    "dex": 55,
+    "name": "Prismurk",
+    "en": "LIGHT UNCOMMON",
+    "type": "LIGHT",
+    "rarity": "Uncommon",
+    "color": "#d3ac47",
+    "description": "A gold white chameleon with angular prism back plates and curled tail.",
+    "ability": {
+      "name": "Bright Mind",
+      "description": "Recovers 5 HP after a correct word."
+    },
+    "specialMove": "Prism Ray",
+    "baseStats": {
+      "hp": 70,
+      "mp": 55,
+      "attack": 27,
+      "defense": 24,
+      "special": 38
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 0
+    }
+  },
+  {
+    "id": "m056",
+    "dex": 56,
+    "name": "Umbrawl",
+    "en": "SHADE UNCOMMON",
+    "type": "SHADE",
+    "rarity": "Uncommon",
+    "color": "#7461b4",
+    "description": "A dark navy panther cub with heavy shadow gauntlets and cyan cheek stripes.",
+    "ability": {
+      "name": "Shadow Step",
+      "description": "Special attacks ignore 15% of enemy defense."
+    },
+    "specialMove": "Night Slash",
+    "baseStats": {
+      "hp": 64,
+      "mp": 48,
+      "attack": 32,
+      "defense": 20,
+      "special": 36
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 1
+    }
+  },
+  {
+    "id": "m057",
+    "dex": 57,
+    "name": "Frosthorn",
+    "en": "FROST UNCOMMON",
+    "type": "FROST",
+    "rarity": "Uncommon",
+    "color": "#79c9da",
+    "description": "A blue white elk with short ice antlers and fur armored knees.",
+    "ability": {
+      "name": "Cold Focus",
+      "description": "Special attacks deal 10% extra damage."
+    },
+    "specialMove": "Frost Lance",
+    "baseStats": {
+      "hp": 75,
+      "mp": 50,
+      "attack": 31,
+      "defense": 35,
+      "special": 32
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 2
+    }
+  },
+  {
+    "id": "m058",
+    "dex": 58,
+    "name": "Coalrake",
+    "en": "FIRE UNCOMMON",
+    "type": "FIRE",
+    "rarity": "Uncommon",
+    "color": "#dc663a",
+    "description": "A charcoal raptor with orange ember feathers and robust talons.",
+    "ability": {
+      "name": "Blaze Drive",
+      "description": "Deals 10% more basic attack damage."
+    },
+    "specialMove": "Ember Rush",
+    "baseStats": {
+      "hp": 74,
+      "mp": 41,
+      "attack": 37,
+      "defense": 27,
+      "special": 33
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 3
+    }
+  },
+  {
+    "id": "m059",
+    "dex": 59,
+    "name": "Torrentus",
+    "en": "WATER UNCOMMON",
+    "type": "WATER",
+    "rarity": "Uncommon",
+    "color": "#289dc4",
+    "description": "A teal sea dragon with white wave fins and strong short legs.",
+    "ability": {
+      "name": "Wave Shield",
+      "description": "Takes 10% less damage from special moves."
+    },
+    "specialMove": "Tidal Crash",
+    "baseStats": {
+      "hp": 78,
+      "mp": 53,
+      "attack": 28,
+      "defense": 31,
+      "special": 30
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 4
+    }
+  },
+  {
+    "id": "m060",
+    "dex": 60,
+    "name": "Brancharg",
+    "en": "LEAF UNCOMMON",
+    "type": "LEAF",
+    "rarity": "Uncommon",
+    "color": "#52a94e",
+    "description": "A charging moss-green deer with branching dark wooden antlers.",
+    "ability": {
+      "name": "Root Guard",
+      "description": "Takes 10% less damage from attacks."
+    },
+    "specialMove": "Leaf Burst",
+    "baseStats": {
+      "hp": 77,
+      "mp": 42,
+      "attack": 32,
+      "defense": 28,
+      "special": 28
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 5
+    }
+  },
+  {
+    "id": "m061",
+    "dex": 61,
+    "name": "Bastillon",
+    "en": "STONE UNCOMMON",
+    "type": "STONE",
+    "rarity": "Uncommon",
+    "color": "#9a8267",
+    "description": "A armored brown stone bear with short ivory tusks and huge square paws.",
+    "ability": {
+      "name": "Stonewall",
+      "description": "Takes 15% less basic attack damage."
+    },
+    "specialMove": "Rock Breaker",
+    "baseStats": {
+      "hp": 87,
+      "mp": 36,
+      "attack": 33,
+      "defense": 36,
+      "special": 20
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 6
+    }
+  },
+  {
+    "id": "m062",
+    "dex": 62,
+    "name": "Aerovolt",
+    "en": "STORM UNCOMMON",
+    "type": "STORM",
+    "rarity": "Uncommon",
+    "color": "#397cbd",
+    "description": "A cobalt falcon with split lightning wing tips and a gold face crest.",
+    "ability": {
+      "name": "Storm Core",
+      "description": "Deals 8% more damage with every move."
+    },
+    "specialMove": "Storm Break",
+    "baseStats": {
+      "hp": 82,
+      "mp": 51,
+      "attack": 35,
+      "defense": 28,
+      "special": 38
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 7
+    }
+  },
+  {
+    "id": "m063",
+    "dex": 63,
+    "name": "Polarook",
+    "en": "FROST UNCOMMON",
+    "type": "FROST",
+    "rarity": "Uncommon",
+    "color": "#79c9da",
+    "description": "A white navy penguin with ice rook-helmet crest and heavy flippers.",
+    "ability": {
+      "name": "Cold Focus",
+      "description": "Special attacks deal 10% extra damage."
+    },
+    "specialMove": "Frost Lance",
+    "baseStats": {
+      "hp": 72,
+      "mp": 46,
+      "attack": 26,
+      "defense": 29,
+      "special": 32
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 8
+    }
+  },
+  {
+    "id": "m064",
+    "dex": 64,
+    "name": "Blazebast",
+    "en": "FIRE RARE",
+    "type": "FIRE",
+    "rarity": "Rare",
+    "color": "#dc663a",
+    "description": "A compact orange lion with angular charcoal mane armor and white fangs.",
+    "ability": {
+      "name": "Blaze Drive",
+      "description": "Deals 10% more basic attack damage."
+    },
+    "specialMove": "Ember Rush",
+    "baseStats": {
+      "hp": 74,
+      "mp": 47,
+      "attack": 42,
+      "defense": 31,
+      "special": 36
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 9
+    }
+  },
+  {
+    "id": "m065",
+    "dex": 65,
+    "name": "Seabram",
+    "en": "WATER RARE",
+    "type": "WATER",
+    "rarity": "Rare",
+    "color": "#289dc4",
+    "description": "A blue flying ray with broad layered wing fins and gold markings.",
+    "ability": {
+      "name": "Wave Shield",
+      "description": "Takes 10% less damage from special moves."
+    },
+    "specialMove": "Tidal Crash",
+    "baseStats": {
+      "hp": 85,
+      "mp": 52,
+      "attack": 33,
+      "defense": 35,
+      "special": 33
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 10
+    }
+  },
+  {
+    "id": "m066",
+    "dex": 66,
+    "name": "Terrabark",
+    "en": "LEAF RARE",
+    "type": "LEAF",
+    "rarity": "Rare",
+    "color": "#52a94e",
+    "description": "A moss green badger with thick bark back armor and root claws.",
+    "ability": {
+      "name": "Root Guard",
+      "description": "Takes 10% less damage from attacks."
+    },
+    "specialMove": "Leaf Burst",
+    "baseStats": {
+      "hp": 77,
+      "mp": 48,
+      "attack": 30,
+      "defense": 32,
+      "special": 31
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 11
+    }
+  },
+  {
+    "id": "m067",
+    "dex": 67,
+    "name": "Dustalon",
+    "en": "STONE RARE",
+    "type": "STONE",
+    "rarity": "Rare",
+    "color": "#9a8267",
+    "description": "A ochre desert scorpion with sandstone pincers and a blunt armored tail.",
+    "ability": {
+      "name": "Stonewall",
+      "description": "Takes 15% less basic attack damage."
+    },
+    "specialMove": "Rock Breaker",
+    "baseStats": {
+      "hp": 94,
+      "mp": 35,
+      "attack": 38,
+      "defense": 40,
+      "special": 23
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 12
+    }
+  },
+  {
+    "id": "m068",
+    "dex": 68,
+    "name": "Steelfang",
+    "en": "METAL RARE",
+    "type": "METAL",
+    "rarity": "Rare",
+    "color": "#7895aa",
+    "description": "A silver sabertooth cat with navy segmented armor and copper whisker plates.",
+    "ability": {
+      "name": "Steel Skin",
+      "description": "Reduces each incoming hit by 3 HP."
+    },
+    "specialMove": "Metal Crash",
+    "baseStats": {
+      "hp": 86,
+      "mp": 43,
+      "attack": 37,
+      "defense": 41,
+      "special": 26
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 13
+    }
+  },
+  {
+    "id": "m069",
+    "dex": 69,
+    "name": "Glowmoth",
+    "en": "LIGHT RARE",
+    "type": "LIGHT",
+    "rarity": "Rare",
+    "color": "#d3ac47",
+    "description": "A golden moth with sun-patterned white wings and orange antennae.",
+    "ability": {
+      "name": "Bright Mind",
+      "description": "Recovers 5 HP after a correct word."
+    },
+    "specialMove": "Prism Ray",
+    "baseStats": {
+      "hp": 73,
+      "mp": 58,
+      "attack": 30,
+      "defense": 27,
+      "special": 41
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 14
+    }
+  },
+  {
+    "id": "m070",
+    "dex": 70,
+    "name": "Nightusk",
+    "en": "SHADE RARE",
+    "type": "SHADE",
+    "rarity": "Rare",
+    "color": "#7461b4",
+    "description": "A midnight purple boar with white tusks and teal dorsal armor.",
+    "ability": {
+      "name": "Shadow Step",
+      "description": "Special attacks ignore 15% of enemy defense."
+    },
+    "specialMove": "Night Slash",
+    "baseStats": {
+      "hp": 67,
+      "mp": 51,
+      "attack": 35,
+      "defense": 23,
+      "special": 39
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-4.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 15
+    }
+  },
+  {
+    "id": "m071",
+    "dex": 71,
+    "name": "Glaciraptor",
+    "en": "FROST RARE",
+    "type": "FROST",
+    "rarity": "Rare",
+    "color": "#79c9da",
+    "description": "A ice-blue feathered raptor with crown-like icy crest and powerful feet.",
+    "ability": {
+      "name": "Cold Focus",
+      "description": "Special attacks deal 10% extra damage."
+    },
+    "specialMove": "Frost Lance",
+    "baseStats": {
+      "hp": 78,
+      "mp": 53,
+      "attack": 34,
+      "defense": 38,
+      "special": 35
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 0
+    }
+  },
+  {
+    "id": "m072",
+    "dex": 72,
+    "name": "Pyronox",
+    "en": "FIRE RARE",
+    "type": "FIRE",
+    "rarity": "Rare",
+    "color": "#dc663a",
+    "description": "A black red ox with magma horns and thick orange chest armor.",
+    "ability": {
+      "name": "Blaze Drive",
+      "description": "Deals 10% more basic attack damage."
+    },
+    "specialMove": "Ember Rush",
+    "baseStats": {
+      "hp": 77,
+      "mp": 44,
+      "attack": 40,
+      "defense": 30,
+      "special": 36
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 1
+    }
+  },
+  {
+    "id": "m073",
+    "dex": 73,
+    "name": "Tidalith",
+    "en": "WATER RARE",
+    "type": "WATER",
+    "rarity": "Rare",
+    "color": "#289dc4",
+    "description": "A blue shelled sea serpent with pearl white armored rings and fin whiskers.",
+    "ability": {
+      "name": "Wave Shield",
+      "description": "Takes 10% less damage from special moves."
+    },
+    "specialMove": "Tidal Crash",
+    "baseStats": {
+      "hp": 81,
+      "mp": 56,
+      "attack": 31,
+      "defense": 34,
+      "special": 33
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 2
+    }
+  },
+  {
+    "id": "m074",
+    "dex": 74,
+    "name": "Verdanox",
+    "en": "LEAF RARE",
+    "type": "LEAF",
+    "rarity": "Rare",
+    "color": "#52a94e",
+    "description": "A compact green armored forest ape with bark fists and leafy shoulder blades.",
+    "ability": {
+      "name": "Root Guard",
+      "description": "Takes 10% less damage from attacks."
+    },
+    "specialMove": "Leaf Burst",
+    "baseStats": {
+      "hp": 80,
+      "mp": 45,
+      "attack": 35,
+      "defense": 31,
+      "special": 31
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 3
+    }
+  },
+  {
+    "id": "m075",
+    "dex": 75,
+    "name": "Cragsteel",
+    "en": "METAL RARE",
+    "type": "METAL",
+    "rarity": "Rare",
+    "color": "#7895aa",
+    "description": "A steel and slate golem with broad shield forearms and amber core.",
+    "ability": {
+      "name": "Steel Skin",
+      "description": "Reduces each incoming hit by 3 HP."
+    },
+    "specialMove": "Metal Crash",
+    "baseStats": {
+      "hp": 86,
+      "mp": 43,
+      "attack": 37,
+      "defense": 41,
+      "special": 26
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 4
+    }
+  },
+  {
+    "id": "m076",
+    "dex": 76,
+    "name": "Jetwing",
+    "en": "WIND RARE",
+    "type": "WIND",
+    "rarity": "Rare",
+    "color": "#52aebc",
+    "description": "A teal kingfisher with two swept jetlike tail feathers and orange beak.",
+    "ability": {
+      "name": "Tailwind",
+      "description": "Basic attacks restore 2 extra MP."
+    },
+    "specialMove": "Gale Cutter",
+    "baseStats": {
+      "hp": 69,
+      "mp": 50,
+      "attack": 35,
+      "defense": 25,
+      "special": 32
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 5
+    }
+  },
+  {
+    "id": "m077",
+    "dex": 77,
+    "name": "Stormquil",
+    "en": "STORM RARE",
+    "type": "STORM",
+    "rarity": "Rare",
+    "color": "#397cbd",
+    "description": "A navy porcupine with gold lightning quills and silver face plates.",
+    "ability": {
+      "name": "Storm Core",
+      "description": "Deals 8% more damage with every move."
+    },
+    "specialMove": "Storm Break",
+    "baseStats": {
+      "hp": 81,
+      "mp": 51,
+      "attack": 36,
+      "defense": 30,
+      "special": 41
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 6
+    }
+  },
+  {
+    "id": "m078",
+    "dex": 78,
+    "name": "Raylion",
+    "en": "LIGHT RARE",
+    "type": "LIGHT",
+    "rarity": "Rare",
+    "color": "#d3ac47",
+    "description": "A gold white lion with a geometric sunburst mane and teal eyes.",
+    "ability": {
+      "name": "Bright Mind",
+      "description": "Recovers 5 HP after a correct word."
+    },
+    "specialMove": "Prism Ray",
+    "baseStats": {
+      "hp": 72,
+      "mp": 59,
+      "attack": 33,
+      "defense": 32,
+      "special": 41
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 7
+    }
+  },
+  {
+    "id": "m079",
+    "dex": 79,
+    "name": "Voidfin",
+    "en": "SHADE RARE",
+    "type": "SHADE",
+    "rarity": "Rare",
+    "color": "#7461b4",
+    "description": "A navy abyssal shark with cyan glowing fin edges and chunky white claws.",
+    "ability": {
+      "name": "Shadow Step",
+      "description": "Special attacks ignore 15% of enemy defense."
+    },
+    "specialMove": "Night Slash",
+    "baseStats": {
+      "hp": 73,
+      "mp": 52,
+      "attack": 38,
+      "defense": 28,
+      "special": 39
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 8
+    }
+  },
+  {
+    "id": "m080",
+    "dex": 80,
+    "name": "Cryotusk",
+    "en": "FROST RARE",
+    "type": "FROST",
+    "rarity": "Rare",
+    "color": "#79c9da",
+    "description": "A small blue woolly mammoth with short ice tusks and huge padded feet.",
+    "ability": {
+      "name": "Cold Focus",
+      "description": "Special attacks deal 10% extra damage."
+    },
+    "specialMove": "Frost Lance",
+    "baseStats": {
+      "hp": 77,
+      "mp": 54,
+      "attack": 30,
+      "defense": 36,
+      "special": 35
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 9
+    }
+  },
+  {
+    "id": "m081",
+    "dex": 81,
+    "name": "Scorchdrill",
+    "en": "FIRE RARE",
+    "type": "FIRE",
+    "rarity": "Rare",
+    "color": "#dc663a",
+    "description": "A armored red mole with glowing spiral drill claws and dark visor-like eye mask.",
+    "ability": {
+      "name": "Blaze Drive",
+      "description": "Deals 10% more basic attack damage."
+    },
+    "specialMove": "Ember Rush",
+    "baseStats": {
+      "hp": 76,
+      "mp": 45,
+      "attack": 43,
+      "defense": 28,
+      "special": 36
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 10
+    }
+  },
+  {
+    "id": "m082",
+    "dex": 82,
+    "name": "Abyssail",
+    "en": "WATER RARE",
+    "type": "WATER",
+    "rarity": "Rare",
+    "color": "#289dc4",
+    "description": "A deep blue sea drake with a broad striped sail and gold horn fins.",
+    "ability": {
+      "name": "Wave Shield",
+      "description": "Takes 10% less damage from special moves."
+    },
+    "specialMove": "Tidal Crash",
+    "baseStats": {
+      "hp": 80,
+      "mp": 57,
+      "attack": 34,
+      "defense": 32,
+      "special": 33
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 11
+    }
+  },
+  {
+    "id": "m083",
+    "dex": 83,
+    "name": "Canopion",
+    "en": "LEAF RARE",
+    "type": "LEAF",
+    "rarity": "Rare",
+    "color": "#52a94e",
+    "description": "A emerald forest scorpion with fern pincers and bark plated tail.",
+    "ability": {
+      "name": "Root Guard",
+      "description": "Takes 10% less damage from attacks."
+    },
+    "specialMove": "Leaf Burst",
+    "baseStats": {
+      "hp": 79,
+      "mp": 46,
+      "attack": 31,
+      "defense": 29,
+      "special": 31
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 12
+    }
+  },
+  {
+    "id": "m084",
+    "dex": 84,
+    "name": "Magnetusk",
+    "en": "METAL RARE",
+    "type": "METAL",
+    "rarity": "Rare",
+    "color": "#7895aa",
+    "description": "A steel grey elephant calf with copper horseshoe tusks and magnetic ear plates.",
+    "ability": {
+      "name": "Steel Skin",
+      "description": "Reduces each incoming hit by 3 HP."
+    },
+    "specialMove": "Metal Crash",
+    "baseStats": {
+      "hp": 85,
+      "mp": 37,
+      "attack": 33,
+      "defense": 39,
+      "special": 26
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 13
+    }
+  },
+  {
+    "id": "m085",
+    "dex": 85,
+    "name": "Thundrax",
+    "en": "STORM RARE",
+    "type": "STORM",
+    "rarity": "Rare",
+    "color": "#397cbd",
+    "description": "A cobalt wolf with three swept lightning mane fins and golden paws.",
+    "ability": {
+      "name": "Storm Core",
+      "description": "Deals 8% more damage with every move."
+    },
+    "specialMove": "Storm Break",
+    "baseStats": {
+      "hp": 84,
+      "mp": 55,
+      "attack": 41,
+      "defense": 36,
+      "special": 41
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 14
+    }
+  },
+  {
+    "id": "m086",
+    "dex": 86,
+    "name": "Auroray",
+    "en": "LIGHT EPIC",
+    "type": "LIGHT",
+    "rarity": "Epic",
+    "color": "#d3ac47",
+    "description": "A white gold manta ray with broad aurora-colored wing bands and a long bright tail.",
+    "ability": {
+      "name": "Bright Mind",
+      "description": "Recovers 5 HP after a correct word."
+    },
+    "specialMove": "Prism Ray",
+    "baseStats": {
+      "hp": 79,
+      "mp": 60,
+      "attack": 35,
+      "defense": 35,
+      "special": 45
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-5.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 15
+    }
+  },
+  {
+    "id": "m087",
+    "dex": 87,
+    "name": "Obsidrax",
+    "en": "SHADE EPIC",
+    "type": "SHADE",
+    "rarity": "Epic",
+    "color": "#7461b4",
+    "description": "A black teal obsidian wyvern with broad blade wings and orange eyes.",
+    "ability": {
+      "name": "Shadow Step",
+      "description": "Special attacks ignore 15% of enemy defense."
+    },
+    "specialMove": "Night Slash",
+    "baseStats": {
+      "hp": 73,
+      "mp": 60,
+      "attack": 40,
+      "defense": 31,
+      "special": 43
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 0
+    }
+  },
+  {
+    "id": "m088",
+    "dex": 88,
+    "name": "Wintermaw",
+    "en": "FROST EPIC",
+    "type": "FROST",
+    "rarity": "Epic",
+    "color": "#79c9da",
+    "description": "A white armored dragon-bear with ice crest and navy massive forepaws.",
+    "ability": {
+      "name": "Cold Focus",
+      "description": "Special attacks deal 10% extra damage."
+    },
+    "specialMove": "Frost Lance",
+    "baseStats": {
+      "hp": 84,
+      "mp": 55,
+      "attack": 39,
+      "defense": 39,
+      "special": 39
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 1
+    }
+  },
+  {
+    "id": "m089",
+    "dex": 89,
+    "name": "Magmorok",
+    "en": "FIRE EPIC",
+    "type": "FIRE",
+    "rarity": "Epic",
+    "color": "#dc663a",
+    "description": "A giant basalt rhinoceros with glowing magma seams and three blunt orange horns.",
+    "ability": {
+      "name": "Blaze Drive",
+      "description": "Deals 10% more basic attack damage."
+    },
+    "specialMove": "Ember Rush",
+    "baseStats": {
+      "hp": 76,
+      "mp": 53,
+      "attack": 45,
+      "defense": 31,
+      "special": 40
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 2
+    }
+  },
+  {
+    "id": "m090",
+    "dex": 90,
+    "name": "Typharok",
+    "en": "WIND EPIC",
+    "type": "WIND",
+    "rarity": "Epic",
+    "color": "#52aebc",
+    "description": "A teal storm bird golem with broad rotating stone wing plates.",
+    "ability": {
+      "name": "Tailwind",
+      "description": "Basic attacks restore 2 extra MP."
+    },
+    "specialMove": "Gale Cutter",
+    "baseStats": {
+      "hp": 73,
+      "mp": 54,
+      "attack": 39,
+      "defense": 29,
+      "special": 36
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 3
+    }
+  },
+  {
+    "id": "m091",
+    "dex": 91,
+    "name": "Rootwarden",
+    "en": "LEAF EPIC",
+    "type": "LEAF",
+    "rarity": "Epic",
+    "color": "#52a94e",
+    "description": "A powerful forest treant titan with dark bark armor and leaf blade shoulders.",
+    "ability": {
+      "name": "Root Guard",
+      "description": "Takes 10% less damage from attacks."
+    },
+    "specialMove": "Leaf Burst",
+    "baseStats": {
+      "hp": 79,
+      "mp": 47,
+      "attack": 33,
+      "defense": 32,
+      "special": 35
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 4
+    }
+  },
+  {
+    "id": "m092",
+    "dex": 92,
+    "name": "Chromadon",
+    "en": "METAL EPIC",
+    "type": "METAL",
+    "rarity": "Epic",
+    "color": "#7895aa",
+    "description": "A silver navy triceratops with copper horns and thick layered shield crest.",
+    "ability": {
+      "name": "Steel Skin",
+      "description": "Reduces each incoming hit by 3 HP."
+    },
+    "specialMove": "Metal Crash",
+    "baseStats": {
+      "hp": 92,
+      "mp": 45,
+      "attack": 42,
+      "defense": 49,
+      "special": 30
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 5
+    }
+  },
+  {
+    "id": "m093",
+    "dex": 93,
+    "name": "Tidewarden",
+    "en": "WATER EPIC",
+    "type": "WATER",
+    "rarity": "Epic",
+    "color": "#289dc4",
+    "description": "A ancient blue sea turtle titan with angular white wave armor and huge fins.",
+    "ability": {
+      "name": "Wave Shield",
+      "description": "Takes 10% less damage from special moves."
+    },
+    "specialMove": "Tidal Crash",
+    "baseStats": {
+      "hp": 89,
+      "mp": 56,
+      "attack": 37,
+      "defense": 39,
+      "special": 37
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 6
+    }
+  },
+  {
+    "id": "m094",
+    "dex": 94,
+    "name": "Stormwarden",
+    "en": "STORM EPIC",
+    "type": "STORM",
+    "rarity": "Epic",
+    "color": "#397cbd",
+    "description": "A cobalt eagle dragon with gold forked horns and cyan talons.",
+    "ability": {
+      "name": "Storm Core",
+      "description": "Deals 8% more damage with every move."
+    },
+    "specialMove": "Storm Break",
+    "baseStats": {
+      "hp": 87,
+      "mp": 60,
+      "attack": 41,
+      "defense": 38,
+      "special": 45
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 7
+    }
+  },
+  {
+    "id": "m095",
+    "dex": 95,
+    "name": "Sunforge",
+    "en": "LIGHT EPIC",
+    "type": "LIGHT",
+    "rarity": "Epic",
+    "color": "#d3ac47",
+    "description": "A gold white armored lion with broad metal eagle wings and a radiant chest plate.",
+    "ability": {
+      "name": "Bright Mind",
+      "description": "Recovers 5 HP after a correct word."
+    },
+    "specialMove": "Prism Ray",
+    "baseStats": {
+      "hp": 78,
+      "mp": 61,
+      "attack": 38,
+      "defense": 33,
+      "special": 45
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 8
+    }
+  },
+  {
+    "id": "m096",
+    "dex": 96,
+    "name": "Moonreaver",
+    "en": "SHADE EPIC",
+    "type": "SHADE",
+    "rarity": "Epic",
+    "color": "#7461b4",
+    "description": "A navy moon panther with crescent antlers and silver segmented tail armor.",
+    "ability": {
+      "name": "Shadow Step",
+      "description": "Special attacks ignore 15% of enemy defense."
+    },
+    "specialMove": "Night Slash",
+    "baseStats": {
+      "hp": 72,
+      "mp": 61,
+      "attack": 43,
+      "defense": 29,
+      "special": 43
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 9
+    }
+  },
+  {
+    "id": "m097",
+    "dex": 97,
+    "name": "Zenithorn",
+    "en": "LIGHT LEGENDARY",
+    "type": "LIGHT",
+    "rarity": "Legendary",
+    "color": "#d3ac47",
+    "description": "A legendary white gold kirin with a long angular solar horn and flowing navy mane.",
+    "ability": {
+      "name": "Bright Mind",
+      "description": "Recovers 5 HP after a correct word."
+    },
+    "specialMove": "Prism Ray",
+    "baseStats": {
+      "hp": 82,
+      "mp": 67,
+      "attack": 39,
+      "defense": 36,
+      "special": 50
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 10
+    }
+  },
+  {
+    "id": "m098",
+    "dex": 98,
+    "name": "Leviacrest",
+    "en": "WATER LEGENDARY",
+    "type": "WATER",
+    "rarity": "Legendary",
+    "color": "#289dc4",
+    "description": "A legendary deep blue whale dragon with majestic white sail fins and coral-gold horns.",
+    "ability": {
+      "name": "Wave Shield",
+      "description": "Takes 10% less damage from special moves."
+    },
+    "specialMove": "Tidal Crash",
+    "baseStats": {
+      "hp": 88,
+      "mp": 60,
+      "attack": 39,
+      "defense": 39,
+      "special": 42
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 11
+    }
+  },
+  {
+    "id": "m099",
+    "dex": 99,
+    "name": "Tempestral",
+    "en": "STORM LEGENDARY",
+    "type": "STORM",
+    "rarity": "Legendary",
+    "color": "#397cbd",
+    "description": "A legendary long sky serpent with cobalt feathered wings and branching gold lightning horns.",
+    "ability": {
+      "name": "Storm Core",
+      "description": "Deals 8% more damage with every move."
+    },
+    "specialMove": "Storm Break",
+    "baseStats": {
+      "hp": 93,
+      "mp": 64,
+      "attack": 50,
+      "defense": 45,
+      "special": 50
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 12
+    }
+  },
+  {
+    "id": "m100",
+    "dex": 100,
+    "name": "Obsidion",
+    "en": "SHADE LEGENDARY",
+    "type": "SHADE",
+    "rarity": "Legendary",
+    "color": "#7461b4",
+    "description": "A legendary obsidian manta dragon with four broad dark wings and cyan armor seams.",
+    "ability": {
+      "name": "Shadow Step",
+      "description": "Special attacks ignore 15% of enemy defense."
+    },
+    "specialMove": "Night Slash",
+    "baseStats": {
+      "hp": 82,
+      "mp": 61,
+      "attack": 47,
+      "defense": 37,
+      "special": 48
+    },
+    "sprite": {
+      "file": "assets/dex-atlas-6.png",
+      "columns": 4,
+      "rows": 4,
+      "index": 13
+    }
+  }
+]
