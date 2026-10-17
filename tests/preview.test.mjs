@@ -20,3 +20,18 @@ test('a rescue preserves progress and cannot award a discovery egg',()=>{const g
 test('review waits for speech, freezes while paused or held, and advances only once',()=>{
  const c=new ReviewClock();c.reset('q1',1600);assert.equal(c.tick(9000),false);assert.equal(c.remaining,1600);c.arm('old-question');assert.equal(c.ready,false);c.arm('q1');c.tick(500);c.tick(9000,{active:false});assert.equal(c.remaining,1100);c.hold(true);c.tick(9000);assert.equal(c.remaining,1100);c.hold(false);assert.equal(c.tick(1099),false);assert.equal(c.tick(1),true);assert.equal(c.tick(9999),false);c.reset('q2',3000);c.arm('q1');assert.equal(c.ready,false);c.cancel();assert.equal(c.tick(9999),false);
 });
+test('restarting an unfinished mission uses the newly selected course and preserves collection, XP and records',()=>{
+ const g=game(11);g.answer();g.act({type:'next'});g.answer();g.act({type:'next'});g.answer('catch');
+ const profile=structuredClone(g.state.profile),oldId=g.state.mission.id,oldQuestion=g.state.mission.question.id;
+ const selected={...settings,mode:'spell',scope:'custom',course:'FET',groupIds:['fet-l07']};
+ g.act({type:'restart',settings:selected});
+ assert.deepEqual(g.state.profile,profile);assert.equal(g.state.profile.totalCaught,1);assert.notEqual(g.state.mission.id,oldId);
+ assert.equal(g.state.mission.stage,0);assert.equal(g.state.mission.score,0);assert.equal(g.state.mission.question.mode,'spell');
+ assert.deepEqual(g.state.mission.settings.groupIds,['fet-l07']);assert.ok(g.state.mission.poolIds.every(id=>data.cards.find(c=>c.id===id).group_ids.includes('fet-l07')));
+ assert.throws(()=>g.act({type:'answer',questionId:oldQuestion,intent:'attack',answer:'old answer'}));
+ const before=structuredClone(g.state);assert.throws(()=>g.act({type:'restart',settings:{...selected,groupIds:[]}}));assert.deepEqual(g.state,before);
+});
+test('restart cannot bypass an unhatched discovery egg',()=>{
+ const g=game(7);while(g.state.mission.phase!=='complete'){g.answer();g.act({type:'next'});}
+ const before=structuredClone(g.state);assert.throws(()=>g.act({type:'restart',settings}),/Hatch/);assert.deepEqual(g.state,before);
+});
