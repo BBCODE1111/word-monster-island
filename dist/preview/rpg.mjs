@@ -1,4 +1,5 @@
 import {selectPool,shuffle,makeOptions,scramble} from './engine.mjs';
+import {careFor} from './care.mjs';
 export const MISSION_STAGES=4;
 export const RARITIES=['Common','Uncommon','Rare','Epic','Legendary'];
 export const UNLOCKS={Common:0,Uncommon:2,Rare:8,Epic:30,Legendary:80};
@@ -35,6 +36,15 @@ export function rosterSummary(profile,catalog){
  return {caught:profile.totalCaught,owned:profile.inventory.length,unique:new Set(profile.inventory.map(m=>m.speciesId)).size,rarities:counts,rarityPoints:RARITIES.reduce((n,r,i)=>n+counts[r]*[1,3,10,35,150][i],0),missions:profile.adventures};
 }
 export function setTeam(profile,ids){if(!Array.isArray(ids)||ids.length<1||ids.length>3||new Set(ids).size!==ids.length||ids.some(id=>!profile.inventory.some(m=>m.id===id)))throw Error('Choose one to three owned teammates.');profile.team=[...ids];}
+export function deployMonster(profile,mission,id,catalog){
+ const monster=profile.inventory.find(m=>m.id===id);if(!monster)throw Error('Choose one of your own monsters.');
+ const active=mission&&['question','result'].includes(mission.phase);
+ if(active&&mission.vitals[id]?.hp===0)throw Error('This teammate needs to recover at base.');
+ let team=[...profile.team];
+ if(!team.includes(id)){if(team.length===3)team=team.filter(x=>x!==(active?mission.active:team.at(-1)));team.push(id);}
+ profile.team=[id,...team.filter(x=>x!==id)];
+ if(active){const stats=monsterStats(monster,catalog);mission.vitals[id]??={hp:stats.hp,mp:stats.mp};mission.active=id;}
+}
 export function beginMission(profile,settings,data,catalog,{random=Math.random,now=Date.now()}={}){
  if(!profile.team?.length)throw Error('Choose your team first.');
  if(!['choice','spell','mixed'].includes(settings.mode)||!['ALL','CET','FET'].includes(settings.course)||!['all','custom'].includes(settings.scope))throw Error('Choose a valid mission.');
@@ -114,10 +124,12 @@ export function reduceGame(state,action,data,catalog,opts={}){
  case 'restart':if(next.mission?.egg&&!next.mission.egg.hatched)throw Error('Hatch your discovery egg first.');if(!['question','result'].includes(next.mission?.phase))throw Error('No active mission to restart.');next.mission=beginMission(next.profile,action.settings,data,catalog,opts);break;
  case 'answer':answerQuestion(next.profile,next.mission,action,data,catalog,opts);break;
  case 'next':advanceMission(next.profile,next.mission,data,catalog,opts);break;
+ case 'deploy':deployMonster(next.profile,next.mission,action.id,catalog);break;
+ case 'care':{const monster=next.profile.inventory.find(m=>m.id===action.id);if(!monster)throw Error('Choose one of your own monsters.');careFor(monster,action.kind,opts.now??Date.now());break;}
  case 'recruit':{const m=next.mission,inst=next.profile.inventory.find(x=>x.id===action.id);if(!m||m.phase!=='result'||!m.captures.includes(action.id)||!inst)throw Error('Catch this teammate first.');if(!next.profile.team.includes(inst.id)){if(next.profile.team.length===3)next.profile.team=next.profile.team.filter(id=>id!==m.active);next.profile.team.push(inst.id);}const stats=monsterStats(inst,catalog);m.vitals[inst.id]??={hp:stats.hp,mp:stats.mp};m.active=inst.id;break;}
  case 'team':if(next.mission?.phase==='question'||next.mission?.phase==='result')throw Error('Return to base before changing your team.');setTeam(next.profile,action.ids);break;
  case 'switch':if(next.mission?.phase!=='question')throw Error('Continue to the next word first.');switchMonster(next.profile,next.mission,action.id);break;
- case 'hatch':{const mission=next.mission;if(mission?.phase!=='complete'||!mission.egg)throw Error('Finish your mission to find an egg.');if(mission.egg.hatched)break;const found=catalog.find(s=>s.id===mission.egg.speciesId);if(!found||!mission.seen.includes(found.id))throw Error('This egg does not belong to this mission.');const leader=next.profile.inventory.find(m=>m.id===mission.active),friend=makeMonster(found,{...opts,level:leader?.level||5,origin:'egg'});next.profile.inventory.push(friend);next.profile.totalCaught++;mission.captures.push(friend.id);mission.egg.hatched=true;mission.egg.monsterId=friend.id;break;}
+ case 'hatch':{const mission=next.mission;if(mission?.phase!=='complete'||!mission.egg)throw Error('Finish your mission to find an egg.');if(mission.egg.hatched)break;const found=catalog.find(s=>s.id===mission.egg.speciesId);if(!found||!mission.seen.includes(found.id))throw Error('This egg does not belong to this mission.');const leader=next.profile.inventory.find(m=>m.id===mission.active),friend=makeMonster(found,{...opts,level:leader?.level||5,origin:'egg'});next.profile.inventory.push(friend);if(next.profile.team.length<3)next.profile.team.push(friend.id);next.profile.totalCaught++;mission.captures.push(friend.id);mission.egg.hatched=true;mission.egg.monsterId=friend.id;break;}
  case 'leave':if(next.mission?.egg&&!next.mission.egg.hatched)throw Error('Hatch your discovery egg first.');next.mission=null;break;
  default:throw Error('Unknown game action.');}
  return next;
