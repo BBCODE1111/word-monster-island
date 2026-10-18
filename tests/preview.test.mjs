@@ -35,3 +35,35 @@ test('restart cannot bypass an unhatched discovery egg',()=>{
  const g=game(7);while(g.state.mission.phase!=='complete'){g.answer();g.act({type:'next'});}
  const before=structuredClone(g.state);assert.throws(()=>g.act({type:'restart',settings}),/Hatch/);assert.deepEqual(g.state,before);
 });
+
+test('an egg friend can lead the very next mission, with its own stats and vitals',()=>{
+ const g=game(7);while(g.state.mission.phase!=='complete'){g.answer();g.act({type:'next'});}g.act({type:'hatch'});
+ const friend=g.state.profile.inventory.at(-1);assert.ok(g.state.profile.team.includes(friend.id));g.act({type:'deploy',id:friend.id});g.act({type:'start',settings});
+ assert.equal(g.state.mission.active,friend.id);assert.ok(g.state.mission.vitals[friend.id].hp>0);assert.equal(g.state.profile.inventory.length,2);
+});
+test('owned friends outside a full team can deploy without healing returning teammates or changing the question',()=>{
+ const g=game(11);const p=g.state.profile,original=p.team[0];
+ for(let i=0;i<3;i++)p.inventory.push({...structuredClone(p.inventory[0]),id:'friend-'+i});p.team.push('friend-0','friend-1');
+ const q=g.state.mission.question.id;g.state.mission.vitals[original]={hp:12,mp:7};g.act({type:'deploy',id:'friend-2'});
+ assert.equal(g.state.mission.active,'friend-2');assert.equal(g.state.profile.team.length,3);assert.ok(!g.state.profile.team.includes(original));assert.equal(g.state.mission.question.id,q);
+ g.act({type:'deploy',id:original});assert.deepEqual(g.state.mission.vitals[original],{hp:12,mp:7});
+ g.state.mission.vitals['friend-2'].hp=0;assert.throws(()=>g.act({type:'deploy',id:'friend-2'}),/recover/);assert.throws(()=>g.act({type:'deploy',id:'not-owned'}),/own monsters/);
+});
+test('a catch can deploy after automatic advancement, even when the catch-result button was missed',()=>{
+ const g=game(11);g.answer();g.act({type:'next'});g.answer();g.act({type:'next'});g.answer('catch');const caught=g.state.profile.inventory.at(-1);
+ g.act({type:'next'});g.act({type:'deploy',id:caught.id});assert.equal(g.state.mission.active,caught.id);assert.equal(g.state.mission.stage,1);
+});
+test('friendship is individual, grows slowly, and three mixed activities trigger persistent sleep',async()=>{
+ const {careStatus,REST_MS}=await import('../dist/preview/care.mjs');const g=game(3),id=g.state.profile.inventory[0].id;
+ g.state.profile.inventory.push({...structuredClone(g.state.profile.inventory[0]),id:'same-species-friend'});
+ const care=(state,kind,now)=>reduceGame(state,{type:'care',id,kind},data,catalog,{now});
+ let s=care(g.state,'pet',1000);s=care(s,'train',2000);assert.equal(careStatus(s.profile.inventory[0],2000).mood,'tired');s=care(s,'feed',3000);
+ const m=s.profile.inventory[0];assert.equal(m.care.bond,6);assert.equal(careStatus(m,3000).sleeping,true);assert.equal(careStatus(s.profile.inventory[1],3000).bond,0);assert.equal(s.profile.inventory[0].xp,0);
+ const restored=JSON.parse(JSON.stringify(s));for(const kind of ['pet','train','feed'])assert.throws(()=>care(restored,kind,3001),/sleeping/);assert.deepEqual(restored,s);
+ const awake=care(s,'pet',3000+REST_MS);assert.equal(awake.profile.inventory[0].care.bond,8);assert.equal(careStatus(awake.profile.inventory[0],3000+REST_MS).uses,1);
+});
+test('care rejects unowned monsters and invalid actions, and friendship caps without bypassing rest',async()=>{
+ const {careFor,careStatus}=await import('../dist/preview/care.mjs');const g=game(),id=g.state.profile.inventory[0].id;
+ assert.throws(()=>g.act({type:'care',id:'fake',kind:'pet'}),/own monsters/);assert.throws(()=>g.act({type:'care',id,kind:'spam'}),/Choose/);
+ const m={care:{bond:99,uses:2,restUntil:0}};careFor(m,'train',1000);assert.equal(careStatus(m,1000).bond,100);assert.equal(careStatus(m,1000).sleeping,true);
+});
