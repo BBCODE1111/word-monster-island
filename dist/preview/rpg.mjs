@@ -4,7 +4,7 @@ export const MISSION_STAGES=4;
 export const RARITIES=['Common','Uncommon','Rare','Epic','Legendary'];
 export const UNLOCKS={Common:0,Uncommon:2,Rare:8,Epic:30,Legendary:80};
 export const WEIGHTS={Common:75.85,Uncommon:18,Rare:5,Epic:1,Legendary:.15};
-export const CATCH_RATES={Common:1,Uncommon:.9,Rare:.6,Epic:.35,Legendary:.15};
+export const CATCH_RATES={Common:.75,Uncommon:.65,Rare:.5,Epic:.3,Legendary:.15};
 export const STAT_KEYS=['hp','mp','attack','defense','special'];
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const int=(n,fallback=0)=>Number.isFinite(n)?Math.floor(n):fallback;
